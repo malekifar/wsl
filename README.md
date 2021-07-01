@@ -19,6 +19,6 @@
 ###### Method 1 Using Settings
 ###### Method 2 Using PowerShell
 ### Installing Ubuntu 20.04
-###### Method 1 Using Microsoft Store
+###### Method 1 - Using Microsoft Store
 ###### Method 2 Using PowerShell
 ## 
