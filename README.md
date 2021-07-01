@@ -3,7 +3,7 @@
 - [Installing WSL](#Installing-WSL)
   - [Requirements](#Requirements)
     - [Updating Windows 10](#Updating-Windows-10)
-    - [Upgrading Windows 7, 8, 8.1](#Upgrading-Windows-7,-8,-8.1)
+    - [Upgrading Windows 7, 8, 8.1](#upgrading-windows-7-8-81)
   - [Enabling Windows Subsystem for Linux using Settings](#Enabling-Windows-Subsystem-for-Linux-using-Settings)
     - [Method1 Using Settings](#Method1-Using-Settings)
     - [Method2 Using PowerShell](#Method2-Using-PowerShell)
