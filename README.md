@@ -24,6 +24,7 @@
 ### Requirements
 - Windows 7, 8, 8.1 do not support WSL. 
 - Versions lower than 1803 of Windows 10 do not support WSL.
+
 To check, press the Windows+R keys and run winver.exe , you should see your version of Windows 10:
 
 ![winver](https://raw.githubusercontent.com/malekifar/wsl/main/screenshots/winver.jpg)
