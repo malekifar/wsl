@@ -2,7 +2,7 @@
 ## **Table of Contents**
 - [Installing WSL](#Installing-WSL)
   - [Requirements](#Requirements)
-    - [Updating Windows 10](#Updating-Windows-10)
+    - [Updating Windows 10](#Updating_Windows_10)
     - [Upgrading Windows 7, 8, 8.1](#Upgrading-Windows-7,-8,-8.1)
   - [Enabling Windows Subsystem for Linux using Settings](#Enabling-Windows-Subsystem-for-Linux-using-Settings)
     - [Method1: Using Settings](#Method1:-Using-Settings)
@@ -17,10 +17,8 @@
 
 ###### Updating Windows 10
 
-####### Udating ufds
-##### Updating Windows 10
+###### Upgrading Windows 7, 8, 8.1
 
-Hello
 ### Enabling Windows Subsystem for Linux using Settings
 ### Installing Ubuntu 20.04
 ## 
