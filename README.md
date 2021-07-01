@@ -15,7 +15,7 @@
 ### Requirements
 
 
-###### [Updating Windows 10]
+###### Updating Windows 10
 
 - Updating Windows 10
 
