@@ -22,9 +22,9 @@
 
 ## Installing WSL
 ### Requirements
-Versions lower than 1803 of Windows 10 do not support WSL
-Windows 10 Home
-Windows 7, 8, 8.1 do not support WSL
+Versions lower than 1803 of Windows 10 do not support WSL.
+
+Windows 7, 8, 8.1 do not support WSL. 
 ###### Updating Windows 10
 ###### Upgrading Windows 7, 8, 8.1
 ### Enabling Windows Subsystem for Linux using Settings
