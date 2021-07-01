@@ -29,4 +29,11 @@
 ### Installing Ubuntu 20.04
 ###### Method1 Using Microsoft Store
 ###### Method2 Using PowerShell
-
+## Installing WSL2
+## Installing Windows Terminal
+## Installing WSH
+## Installing PowerLevel10K
+## Installing WSLU
+## Installing WSL Sudo
+## Installing VSCode
+## Installing Jupyter Notebook
