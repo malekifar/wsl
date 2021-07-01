@@ -11,7 +11,7 @@
     - [Method1 Using Microsoft Store](#method1-using-microsoft-store)
     - [Method2 Using PowerShell](#Method2-using-powershell-1)
 - [Installing WSL2](#Installing-WSL2)
-  -[Requirements](#Requirements)
+  - [Requirements](#Requirements-1)
 - [Installing Windows Terminal](#Installing-Windows-Terminal)
 - [Installing WSH](#Installing-WSH)
 - [Installing PowerLevel10K](#Installing-PowerLevel10K)
