@@ -55,7 +55,14 @@ Once you complete the steps, the environment will be configured to download and 
 ###### Method1 Using Microsoft Store
 
 ###### Method2 Using PowerShell
+1.Type the following command to create folder `appx` on `C:\` directory and press Enter:
+`mkdir c:\appx`
+- For x64 systems:
+`Invoke-WebRequest -Uri https://aka.ms/wslubuntu2004 -OutFile Ubuntu.appx -UseBasicParsing`
+- For ARM64: 
+`Invoke-WebRequest -Uri https://aka.ms/wslubuntu2004arm -OutFile Ubuntu.appx -UseBasicParsing`
 
+`Add-AppxPackage .\Ubuntu.appx`
 ## Installing WSL2
 ### Requirements
 - For x64 systems: Version 1903 or higher, with Build 18362 or higher.
