@@ -53,12 +53,16 @@ Open PowerShell as an admin and run the following script:
 Once you complete the steps, the environment will be configured to download and run the distros of Linux on Windows 10.
 ### Installing Ubuntu 20.04
 ###### Method1 Using Microsoft Store
-
+1. Open Microsoft Store.
+2. Search for the Ubuntu
+3. Select the Ubuntu 20.04 to install on your device.
+![Store install]()
 ###### Method2 Using PowerShell
-1.Type the following command to create folder `appx` on `C:\` directory and press Enter:
+1. Type the following command to create folder `appx` on `C:\` directory and press Enter:
 
 `mkdir c:\appx`
-2.Type the following command to navigate to `appx` directory
+
+2. Type the following command to navigate to `appx` directory and press Enter:
 
 `cd c:\appx`
 
