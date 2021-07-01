@@ -8,7 +8,7 @@
     - [Method1 Using Settings](#Method1-Using-Settings)
     - [Method2 Using PowerShell](#Method2-Using-PowerShell)
   - [Installing Ubuntu 20.04](#Installing-Ubuntu-20.04)
-    - [Method1 - Using Microsoft Store](Method1-Using-Microsoft-Store)
+    - [Method1 Using Microsoft Store](Method1-Using-Microsoft-Store)
     - [Method2 Using PowerShell](Method2-Using-PowerShell)
     
 ## Installing WSL
