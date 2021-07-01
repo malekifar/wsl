@@ -22,8 +22,11 @@
 
 ## Installing WSL
 ### Requirements
-- Versions lower than 1803 of Windows 10 do not support WSL.
 - Windows 7, 8, 8.1 do not support WSL. 
+- Versions lower than 1803 of Windows 10 do not support WSL.
+To check, press the Windows+R keys and run winver.exe , you should see your version of Windows 10:
+
+[winver](https://raw.githubusercontent.com/malekifar/wsl/main/screenshots/winver.jpg)
 ###### Updating Windows 10
 If you have an older version, you can get it manually through the [Update Assistant](https://www.microsoft.com/en-us/software-download/windows10).
 
