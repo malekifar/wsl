@@ -4,7 +4,7 @@
   - [Requirements](#Requirements)
     - [Updating Windows 10](#Updating-Windows-10)
     - [Upgrading Windows 7, 8, 8.1](#upgrading-windows-7-8-81)
-  - [Enabling Windows Subsystem for Linux using Settings](#Enabling-Windows-Subsystem-for-Linux-using-Settings)
+  - [Enabling Windows Subsystem for Linux](#Enabling-Windows-Subsystem-for-Linux)
     - [Method1 Using Settings](#Method1-Using-Settings)
     - [Method2 Using PowerShell](#Method2-Using-PowerShell)
   - [Installing Ubuntu 20.04](#installing-ubuntu-2004)
@@ -12,6 +12,9 @@
     - [Method2 Using PowerShell](#Method2-using-powershell-1)
 - [Installing WSL2](#Installing-WSL2)
   - [Requirements](#Requirements-1)
+  - [Enabling Windows Subsystem for Linux](#Enabling-Windows-Subsystem-for-Linux)
+    - [Method1 Using Settings](#Method1-Using-Settings)
+    - [Method2 Using PowerShell](#Method2-Using-PowerShell)
 - [Installing Windows Terminal](#Installing-Windows-Terminal)
 - [Installing WSH](#Installing-WSH)
 - [Installing PowerLevel10K](#Installing-PowerLevel10K)
@@ -38,17 +41,19 @@ If you have a Windows 7, 8 or 8.1, you can upgrade it to Windows 10 manually thr
 ![Upgrade to Win10](https://raw.githubusercontent.com/malekifar/wsl/main/screenshots/Upgrade%20to%20Win10.jpg)
 
 Now that you have the right version of Windows, you can install WSL.
-### Enabling Windows Subsystem for Linux using Settings
+### Enabling Windows Subsystem for Linux
 ###### Method1 Using Settings
 Press the Windows+R keys and run `optionalfeatures` , you should see Windows Features:
 
 ![Windows Features](https://raw.githubusercontent.com/malekifar/wsl/main/screenshots/Windows_Features.webp)
 
-Check the Windows Subsystem for Linux option and click the OK button.Then click the Restart now button.
+Check the `Windows Subsystem for Linux` option and click the OK button.Then click the Restart now button.
 ###### Method2 Using PowerShell
 Open PowerShell as an admin and run the following script:
 
 `dism.exe /online /enable-feature /featurename:Microsoft-Windows-Subsystem-Linux /all /norestart`
+
+After the script is complete, you need to reboot your machine, since this enables new Windows features.
 
 Once you complete the steps, the environment will be configured to download and run the distros of Linux on Windows 10.
 ### Installing Ubuntu 20.04
@@ -81,6 +86,22 @@ Type the following command to install Ubuntu and press Enter:
 - For x64 systems: Version 1903 or higher, with Build 18362 or higher.
 - For ARM64 systems: Version 2004 or higher, with Build 19041 or higher.
 - Builds lower than 18362 do not support WSL 2.
+If you have an older version, Following [the instructions here](#Updating-Windows-10)
+### Enabling Virtual Machine Platform
+###### Method1 Using Settings
+Press the Windows+R keys and run `optionalfeatures` , you should see Windows Features:
+
+![Windows Features](https://raw.githubusercontent.com/malekifar/wsl/main/screenshots/Windows_Features.webp)
+
+Check the `Virtual Machine Platform` option and click the OK button.Then click the Restart now button.
+###### Method2 Using PowerShell
+Open PowerShell as an admin and run the following script:
+
+`dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /norestart`
+
+After the script is complete, you need to reboot your machine, since this enables new Windows features.
+
+
 ## Installing Windows Terminal
 ## Installing WSH
 ## Installing PowerLevel10K
