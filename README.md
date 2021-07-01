@@ -7,7 +7,7 @@
   - [Enabling Windows Subsystem for Linux using Settings](#Enabling-Windows-Subsystem-for-Linux-using-Settings)
     - [Method1 Using Settings](#Method1-Using-Settings)
     - [Method2 Using PowerShell](#Method2-Using-PowerShell)
-  - [Installing Ubuntu 20.04](#Installing-Ubuntu-20.04)
+  - [Installing Ubuntu 20.04](#installing-ubuntu-2004)
     - [Method1 Using Microsoft Store](#method1-using-microsoft-store)
     - [Method2 Using PowerShell](#Method2-using-powershell-1)
 - [Installing WSL2](#Installing-WSL2)
