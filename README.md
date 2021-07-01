@@ -2,7 +2,7 @@
 ## **Table of Contents**
 - [Installing WSL](#Installing-WSL)
   - [Requirements](#Requirements)
-    - [Updating Windows 10](#Updating_Windows_10)
+    - [Updating Windows 10](#Updating-Windows-10)
     - [Upgrading Windows 7, 8, 8.1](#Upgrading-Windows-7,-8,-8.1)
   - [Enabling Windows Subsystem for Linux using Settings](#Enabling-Windows-Subsystem-for-Linux-using-Settings)
     - [Method1: Using Settings](#Method1:-Using-Settings)
