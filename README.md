@@ -33,7 +33,7 @@ If you have an older version, you can get it manually through the [Update Assist
 
 ![Updating Windows10](https://raw.githubusercontent.com/malekifar/wsl/main/screenshots/Update%20Build.jpg)
 ###### Upgrading Windows 7, 8, 8.1
-If you have a Windows 7, 8 or 8.1, you can upgrdae it to Windows 10 manually through the [Create Windows 10 installation media](https://www.microsoft.com/en-us/software-download/windows10).
+If you have a Windows 7, 8 or 8.1, you can upgrade it to Windows 10 manually through the [Create Windows 10 installation media](https://www.microsoft.com/en-us/software-download/windows10).
 
 ![Upgrade to Win10](https://raw.githubusercontent.com/malekifar/wsl/main/screenshots/Upgrade%20to%20Win10.jpg)
 ### Enabling Windows Subsystem for Linux using Settings
