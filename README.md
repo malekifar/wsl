@@ -1,5 +1,5 @@
 # How to install Ubuntu 20.04 + WSL2 + Windows Terminal + ZSH + PowerLink10 + WSLU + WSL Sudo + VScode + Jupyter Notebook
-## Table of Contents
+## **Table of Contents**
 - [Installing WSL](#Installing-WSL)
   - [Requirements](#Requirements)
     - [Updating Windows 10](#Updating-Windows-10)
