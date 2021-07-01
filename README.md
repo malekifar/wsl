@@ -56,11 +56,17 @@ Once you complete the steps, the environment will be configured to download and 
 
 ###### Method2 Using PowerShell
 1.Type the following command to create folder `appx` on `C:\` directory and press Enter:
+
 `mkdir c:\appx`
+2.Type the following command to navigate to `appx` directory
+
+`cd c:\appx`
+Type the following command to download Ubuntu and press Enter:
 - For x64 systems:
 `Invoke-WebRequest -Uri https://aka.ms/wslubuntu2004 -OutFile Ubuntu.appx -UseBasicParsing`
 - For ARM64: 
 `Invoke-WebRequest -Uri https://aka.ms/wslubuntu2004arm -OutFile Ubuntu.appx -UseBasicParsing`
+Type the following command to install Ubuntu and press Enter:
 
 `Add-AppxPackage .\Ubuntu.appx`
 ## Installing WSL2
