@@ -22,6 +22,9 @@
 
 ## Installing WSL
 ### Requirements
+Versions lower than 1803 of Windows 10 do not support WSL
+Windows 10 Home
+Windows 7, 8, 8.1 do not support WSL
 ###### Updating Windows 10
 ###### Upgrading Windows 7, 8, 8.1
 ### Enabling Windows Subsystem for Linux using Settings
@@ -32,6 +35,9 @@
 ###### Method2 Using PowerShell
 ## Installing WSL2
 ### Requirements
+For x64 systems: Version 1903 or higher, with Build 18362 or higher.
+For ARM64 systems: Version 2004 or higher, with Build 19041 or higher.
+Builds lower than 18362 do not support WSL 2.
 ## Installing Windows Terminal
 ## Installing WSH
 ## Installing PowerLevel10K
