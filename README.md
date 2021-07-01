@@ -25,7 +25,7 @@
 - Windows 7, 8, 8.1 do not support WSL. 
 - Versions lower than 1803 of Windows 10 do not support WSL.
 
-To check, press the Windows+R keys and run winver.exe , you should see your version of Windows 10:
+To check, press the Windows+R keys and run `winver` , you should see your version of Windows 10:
 
 ![winver](https://raw.githubusercontent.com/malekifar/wsl/main/screenshots/winver.jpg)
 ###### Updating Windows 10
@@ -36,12 +36,26 @@ If you have an older version, you can get it manually through the [Update Assist
 If you have a Windows 7, 8 or 8.1, you can upgrade it to Windows 10 manually through the [Create Windows 10 installation media](https://www.microsoft.com/en-us/software-download/windows10).
 
 ![Upgrade to Win10](https://raw.githubusercontent.com/malekifar/wsl/main/screenshots/Upgrade%20to%20Win10.jpg)
+
+Now that you have the right version of Windows, you can install WSL.
 ### Enabling Windows Subsystem for Linux using Settings
 ###### Method1 Using Settings
+Press the Windows+R keys and run `optionalfeatures` , you should see Windows Features:
+
+![Windows Features](https://raw.githubusercontent.com/malekifar/wsl/main/screenshots/Windows_Features.webp)
+
+Check the Windows Subsystem for Linux option and click the OK button.Then click the Restart now button.
 ###### Method2 Using PowerShell
+Open PowerShell as an admin and run the following script:
+
+`dism.exe /online /enable-feature /featurename:Microsoft-Windows-Subsystem-Linux /all /norestart`
+
+Once you complete the steps, the environment will be configured to download and run the distros of Linux on Windows 10.
 ### Installing Ubuntu 20.04
 ###### Method1 Using Microsoft Store
+
 ###### Method2 Using PowerShell
+
 ## Installing WSL2
 ### Requirements
 - For x64 systems: Version 1903 or higher, with Build 18362 or higher.
