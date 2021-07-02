@@ -17,6 +17,7 @@
   - [Enabling Windows Subsystem for Linux](#Enabling-Windows-Subsystem-for-Linux)
     - [Method1 Using Settings](#Method1-Using-Settings)
     - [Method2 Using PowerShell](#Method2-Using-PowerShell)
+  - [Updating WSL](#)
 - [Windows Terminal](#Windows-Terminal)
   - [Requirements](#Requirements)
   - [Installing](#)
@@ -117,6 +118,7 @@ Open PowerShell as an admin and run the following script:
 `dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /norestart`
 
 After the script is complete, you need to reboot your machine, since this enables new Windows features.
+### Updating WSL
 Once your PC has rebooted, we need to update the WSL 2 Linux kernel.Follow the download link, an msi installation will complete the update:
 - For x64 systems: [WSL2 Linux kernel update package](https://wslstorestorage.blob.core.windows.net/wslblob/wsl_update_x64.msi)
 - For ARM64 systems: [WSL2 Linux kernel update package](https://wslstorestorage.blob.core.windows.net/wslblob/wsl_update_arm64.msi)
