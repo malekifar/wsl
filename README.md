@@ -94,7 +94,24 @@ Type the following command to install Ubuntu and press Enter:
 `Add-AppxPackage .\Ubuntu.appx`
 
 ###### Method3 Using Windows Package Manager
-Open Powershell and Type the following command to install Ubuntu 20.04
+To use Windows Package Manager, you should install it first:
+
+1. Open Powershell and Type the following command to create folder `appx` on `C:\` directory and press Enter:
+
+`mkdir c:\appx`
+
+2. Type the following command to navigate to `appx` directory and press Enter:
+
+`cd c:\appx`
+
+Type the following command to download Ubuntu and press Enter:
+
+`Invoke-WebRequest -Uri https://github.com/microsoft/winget-cli/releases/download/v1.0.11692/Microsoft.DesktopAppInstaller_8wekyb3d8bbwe.msixbundle -OutFile WPM.msixbundle -UseBasicParsing`
+
+Type the following command to install Ubuntu and press Enter:
+
+`Add-AppxPackage .\WPM.msixbundle`
+Open Powershell or Command Prompt and Type the following command to install Ubuntu 20.04
 
 `winget install Canonical.Ubuntu`
 
@@ -166,7 +183,7 @@ Type the following command to install Windows Terminal and press Enter:
 `Add-AppxPackage .\Terminal.msixbundle`
 
 ###### Method3 Using Windows Package Manager
-Open Powershell and Type the following command to install Windows Terminal
+Open Powershell or Command Prompt and Type the following command to install Windows Terminal
 
 `winget install microsoft.windowsterminal`
 
