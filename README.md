@@ -1,6 +1,6 @@
 # How to install Ubuntu 20.04 + WSL2 + Windows Terminal + ZSH + PowerLevel10K + WSLU + WSL Sudo + VScode + Jupyter Notebook
 ## Table of Contents
-- [Installing WSL](#Installing-WSL)
+- [WSL](#WSL)
   - [Requirements](#Requirements)
     - [Updating Windows 10](#Updating-Windows-10)
     - [Upgrading Windows 7, 8, 8.1](#upgrading-windows-7-8-81)
@@ -10,26 +10,33 @@
   - [Installing Ubuntu 20.04](#installing-ubuntu-2004)
     - [Method1 Using Microsoft Store](#method1-using-microsoft-store)
     - [Method2 Using PowerShell](#Method2-using-powershell-1)
-- [Installing WSL2](#Installing-WSL2)
+    - [Method3 Using Windows Package Manager](#)
+      - [Installing Windows Package Manager]
+- [WSL2](#WSL2)
   - [Requirements](#Requirements-1)
   - [Enabling Windows Subsystem for Linux](#Enabling-Windows-Subsystem-for-Linux)
     - [Method1 Using Settings](#Method1-Using-Settings)
     - [Method2 Using PowerShell](#Method2-Using-PowerShell)
-- [Installing Windows Terminal](#Installing-Windows-Terminal)
+- [Windows Terminal](#Windows-Terminal)
   - [Requirements](#Requirements)
-- [Installing WSH](#Installing-WSH)
-- [Installing PowerLevel10K](#Installing-PowerLevel10K)
-- [Installing WSLU](#Installing-WSLU)
-- [Installing WSL Sudo](#Installing-WSL-Sudo)
-- [Installing VSCode](#Installing-VSCode)
-- [Installing Jupyter Notebook](#Installing-Jupyter-Notebook)
+  - [Installing](#)
+    - [Method1 Using Microsoft Store](#method1-using-microsoft-store)
+    - [Method2 Using PowerShell](#Method2-using-powershell-1)
+    - [Method3 Using Windows Package Manager](#)
+      
+- [WSH](#WSH)
+- [PowerLevel10K](#Installing-PowerLevel10K)
+- [WSLU](#Installing-WSLU)
+- [WSL Sudo](#Installing-WSL-Sudo)
+- [VSCode](#VSCode)
+- [Jupyter Notebook](#Jupyter-Notebook)
 
-## Installing WSL
+## WSL
 ### Requirements
 - Windows 7, 8, 8.1 do not support WSL. 
 - Versions lower than 1803 of Windows 10 do not support WSL.
 
-To check, press the Windows+R keys and run `winver` , you should see your version of Windows 10:
+To check, press the <kbd>⊞ Win</kbd> + <kbd>R</kbd> keys and run `winver` , you should see your version of Windows 10:
 
 ![winver](https://raw.githubusercontent.com/malekifar/wsl/main/screenshots/winver.jpg)
 ###### Updating Windows 10
@@ -44,7 +51,7 @@ If you have a Windows 7, 8 or 8.1, you can upgrade it to Windows 10 manually thr
 Now that you have the right version of Windows, you can install WSL.
 ### Enabling Windows Subsystem for Linux
 ###### Method1 Using Settings
-Press the Windows+R keys and run `optionalfeatures` , you should see Windows Features:
+Press the <kbd>⊞ Win</kbd> + <kbd>R</kbd> keys and run `optionalfeatures` , you should see Windows Features:
 
 ![Enable WSL](https://raw.githubusercontent.com/malekifar/wsl/main/screenshots/Windows_Features.webp)
 
@@ -63,9 +70,9 @@ Once you complete the steps, the environment will be configured to download and 
 2. Search for the Ubuntu
 3. Select the Ubuntu 20.04 to install on your device.
 
-![Store install]()
+![Store install](https://raw.githubusercontent.com/malekifar/wsl/main/screenshots/Store%20Ubuntu-20.04.jpg)
 ###### Method2 Using PowerShell
-1. Type the following command to create folder `appx` on `C:\` directory and press Enter:
+1. Open Powershell and Type the following command to create folder `appx` on `C:\` directory and press Enter:
 
 `mkdir c:\appx`
 
@@ -85,6 +92,11 @@ Type the following command to install Ubuntu and press Enter:
 
 `Add-AppxPackage .\Ubuntu.appx`
 
+###### Method3 Using Windows Package Manager
+Open Powershell and Type the following command to install Ubuntu 20.04
+
+`winget install Canonical.Ubuntu`
+
 The first launch will do the actual installation and will take a few seconds. The setup will also ask you for a username and a password for your Ubuntu configuration.
 ## Installing WSL2
 ### Requirements
@@ -94,7 +106,7 @@ The first launch will do the actual installation and will take a few seconds. Th
 If you have an older version, Following [the instructions here](#Updating-Windows-10)
 ### Enabling Virtual Machine Platform
 ###### Method1 Using Settings
-Press the Windows+R keys and run `optionalfeatures` , you should see Windows Features:
+Press the <kbd>⊞ Win</kbd> + <kbd>R</kbd> keys and run `optionalfeatures` , you should see Windows Features:
 
 ![Enable VMP](https://raw.githubusercontent.com/malekifar/wsl/main/screenshots/Enable%20VMP.jpg)
 
@@ -123,15 +135,42 @@ If this is still showing version 1, you can run the upgrade command:
 
 `wsl --set-version Ubuntu-20.04 2`
 
-<kbd>+</kbd>
-<code>settings.json</code>
 Now, You have Ubuntu-20.04 on version 2
-## Installing Windows Terminal
+## Windows Terminal
 ### Requirements
 Versions 1903 (build 18362) of Windows 10
-## Installing WSH
-## Installing PowerLevel10K
-## Installing WSLU
-## Installing WSL Sudo
-## Installing VSCode
-## Installing Jupyter Notebook
+### Installing
+###### Method1 Using Microsoft Store
+1. Open Microsoft Store.
+2. Search for the Windows Terminal
+3. Select the Windows Terminal to install on your device.
+
+![Store install](https://raw.githubusercontent.com/malekifar/wsl/main/screenshots/Store%20windows%20terminal.jpg)
+###### Method2 Using PowerShell
+1. Open Powershell and Type the following command to create folder `appx` on `C:\` directory and press Enter:
+
+`mkdir c:\appx`
+
+2. Type the following command to navigate to `appx` directory and press Enter:
+
+`cd c:\appx`
+
+Type the following command to download Windows Termianl and press Enter:
+
+`Invoke-WebRequest -Uri https://github.com/microsoft/terminal/releases/download/v1.8.1444.0/Microsoft.WindowsTerminal_1.8.1444.0_8wekyb3d8bbwe.msixbundle -OutFile Terminal.msixbundle -UseBasicParsing`
+
+Type the following command to install Windows Terminal and press Enter:
+
+`Add-AppxPackage .\Terminal.msixbundle`
+
+###### Method3 Using Windows Package Manager
+Open Powershell and Type the following command to install Windows Terminal
+
+`winget install microsoft.windowsterminal`
+
+## WSH
+## PowerLevel10K
+## WSLU
+## WSL Sudo
+## VSCode
+## Jupyter Notebook
