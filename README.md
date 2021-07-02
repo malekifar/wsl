@@ -63,7 +63,7 @@ Once you complete the steps, the environment will be configured to download and 
 2. Search for the Ubuntu
 3. Select the Ubuntu 20.04 to install on your device.
 
-![Store install](https://raw.githubusercontent.com/malekifar/wsl/main/screenshots/Store%20install.jpg)
+![Store install]()
 ###### Method2 Using PowerShell
 1. Type the following command to create folder `appx` on `C:\` directory and press Enter:
 
