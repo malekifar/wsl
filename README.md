@@ -84,6 +84,8 @@ Type the following command to download Ubuntu and press Enter:
 Type the following command to install Ubuntu and press Enter:
 
 `Add-AppxPackage .\Ubuntu.appx`
+
+The first launch will do the actual installation and will take a few seconds. The setup will also ask you for a username and a password for your Ubuntu configuration.
 ## Installing WSL2
 ### Requirements
 - For x64 systems: Version 1903 or higher, with Build 18362 or higher.
@@ -121,6 +123,8 @@ If this is still showing version 1, you can run the upgrade command:
 
 `wsl --set-version Ubuntu-20.04 2`
 
+<kbd>+</kbd>
+<code>settings.json</code>
 Now, You have Ubuntu-20.04 on version 2
 ## Installing Windows Terminal
 ### Requirements
