@@ -16,6 +16,7 @@
     - [Method1 Using Settings](#Method1-Using-Settings)
     - [Method2 Using PowerShell](#Method2-Using-PowerShell)
 - [Installing Windows Terminal](#Installing-Windows-Terminal)
+  - [Requirements](#Requirements)
 - [Installing WSH](#Installing-WSH)
 - [Installing PowerLevel10K](#Installing-PowerLevel10K)
 - [Installing WSLU](#Installing-WSLU)
@@ -62,7 +63,7 @@ Once you complete the steps, the environment will be configured to download and 
 2. Search for the Ubuntu
 3. Select the Ubuntu 20.04 to install on your device.
 
-![Store install](https://raw.githubusercontent.com/malekifar/wsl/main/screenshots/Store%20install.jpg)
+![Store install]()
 ###### Method2 Using PowerShell
 1. Type the following command to create folder `appx` on `C:\` directory and press Enter:
 
@@ -122,6 +123,8 @@ If this is still showing version 1, you can run the upgrade command:
 
 Now, You have Ubuntu-20.04 on version 2
 ## Installing Windows Terminal
+### Requirements
+Versions 1903 (build 18362) of Windows 10
 ## Installing WSH
 ## Installing PowerLevel10K
 ## Installing WSLU
