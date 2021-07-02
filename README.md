@@ -45,7 +45,7 @@ Now that you have the right version of Windows, you can install WSL.
 ###### Method1 Using Settings
 Press the Windows+R keys and run `optionalfeatures` , you should see Windows Features:
 
-![Windows Features](https://raw.githubusercontent.com/malekifar/wsl/main/screenshots/Windows_Features.webp)
+![Enable WSL](https://raw.githubusercontent.com/malekifar/wsl/main/screenshots/Windows_Features.webp)
 
 Check the `Windows Subsystem for Linux` option and click the OK button.Then click the Restart now button.
 ###### Method2 Using PowerShell
@@ -74,8 +74,10 @@ Once you complete the steps, the environment will be configured to download and 
 
 Type the following command to download Ubuntu and press Enter:
 - For x64 systems:
+
 `Invoke-WebRequest -Uri https://aka.ms/wslubuntu2004 -OutFile Ubuntu.appx -UseBasicParsing`
 - For ARM64: 
+
 `Invoke-WebRequest -Uri https://aka.ms/wslubuntu2004arm -OutFile Ubuntu.appx -UseBasicParsing`
 
 Type the following command to install Ubuntu and press Enter:
@@ -91,7 +93,7 @@ If you have an older version, Following [the instructions here](#Updating-Window
 ###### Method1 Using Settings
 Press the Windows+R keys and run `optionalfeatures` , you should see Windows Features:
 
-![Windows Features](https://raw.githubusercontent.com/malekifar/wsl/main/screenshots/Windows_Features.webp)
+![Enable VMP](https://raw.githubusercontent.com/malekifar/wsl/main/screenshots/Enable%20VMP.jpg)
 
 Check the `Virtual Machine Platform` option and click the OK button.Then click the Restart now button.
 ###### Method2 Using PowerShell
@@ -100,8 +102,25 @@ Open PowerShell as an admin and run the following script:
 `dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /norestart`
 
 After the script is complete, you need to reboot your machine, since this enables new Windows features.
+Once your PC has rebooted, we need to update the WSL 2 Linux kernel.Follow the download link, an msi installation will complete the update:
+- For x64 systems: [WSL2 Linux kernel update package](https://wslstorestorage.blob.core.windows.net/wslblob/wsl_update_x64.msi)
+- For ARM64 systems: [WSL2 Linux kernel update package](https://wslstorestorage.blob.core.windows.net/wslblob/wsl_update_arm64.msi)
 
+![Installation MSI](https://raw.githubusercontent.com/malekifar/wsl/main/screenshots/Installation%20WSL2.png)
 
+OK, now it is time to set WSL2 to be the default for all WSL installations. Trust me, you don’t need to use WSL version 1 ever again. Open PowerShell and run:
+
+`wsl --set-default-version 2`
+
+The result is not very exciting, but it will come handy soon.Now ensure that WSL is correctly using version 2 for Ubuntu-20.04:
+
+`wsl --list -v`
+
+If this is still showing version 1, you can run the upgrade command:
+
+`wsl --set-version Ubuntu-20.04 2`
+
+Now, You have Ubuntu-20.04 on version 2
 ## Installing Windows Terminal
 ## Installing WSH
 ## Installing PowerLevel10K
