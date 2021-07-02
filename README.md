@@ -186,7 +186,11 @@ Type the following command to install Windows Terminal and press Enter:
 Open Powershell or Command Prompt and Type the following command to install Windows Terminal
 
 `winget install microsoft.windowsterminal`
-
+### Configuring
+ Windows Terminal will install and open with the default shell (PowerShell), let’s set Ubuntu to be the default console on Windows Terminal. Press the <kbd>Ctrl</kbd> + <kbd>,</kbd> keys or select the Settings menu as in the picture below:
+ 
+ ![setting Terminal]()
+ 
 ## WSH
 ## PowerLevel10K
 ## WSLU
