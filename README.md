@@ -116,7 +116,7 @@ Open Powershell or Command Prompt and Type the following command to install Ubun
 `winget install Canonical.Ubuntu`
 
 The first launch will do the actual installation and will take a few seconds. The setup will also ask you for a username and a password for your Ubuntu configuration.
-## Installing WSL2
+## WSL2
 ### Requirements
 - For x64 systems: Version 1903 or higher, with Build 18362 or higher.
 - For ARM64 systems: Version 2004 or higher, with Build 19041 or higher.
