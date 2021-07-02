@@ -18,18 +18,23 @@
     - [Method1 Using Settings](#Method1-Using-Settings)
     - [Method2 Using PowerShell](#Method2-Using-PowerShell)
   - [Updating WSL](#)
+- [VSCode](#VSCode)
+  - [Installing](#)
+    - [Method1 ]
+    - [Method2 Using Windows Package Manager](#)
+  - [Configuring](#)
+  - [Best Extension](#)
 - [Windows Terminal](#Windows-Terminal)
   - [Requirements](#Requirements)
   - [Installing](#)
     - [Method1 Using Microsoft Store](#method1-using-microsoft-store)
     - [Method2 Using PowerShell](#Method2-using-powershell-1)
     - [Method3 Using Windows Package Manager](#)
-      
+  - [Configuring](#)
 - [WSH](#WSH)
 - [PowerLevel10K](#Installing-PowerLevel10K)
 - [WSLU](#Installing-WSLU)
 - [WSL Sudo](#Installing-WSL-Sudo)
-- [VSCode](#VSCode)
 - [Jupyter Notebook](#Jupyter-Notebook)
 
 ## WSL
