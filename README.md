@@ -11,7 +11,7 @@
     - [Method1 Using Microsoft Store](#method1-using-microsoft-store)
     - [Method2 Using PowerShell](#Method2-using-powershell-1)
     - [Method3 Using Windows Package Manager](#)
-      - [Installing Windows Package Manager]
+      - [Installing Windows Package Manager](#)
 - [WSL2](#WSL2)
   - [Requirements](#Requirements-1)
   - [Enabling Windows Subsystem for Linux](#Enabling-Windows-Subsystem-for-Linux)
@@ -19,6 +19,7 @@
     - [Method2 Using PowerShell](#Method2-Using-PowerShell)
   - [Updating WSL](#)
 - [VSCode](#VSCode)
+  - [Requirements](#Requirements)
   - [Installing](#)
     - [Method1 ]
     - [Method2 Using Windows Package Manager](#)
@@ -200,5 +201,12 @@ Open Powershell or Command Prompt and Type the following command to install Wind
 ## PowerLevel10K
 ## WSLU
 ## WSL Sudo
-## VSCode
+## VSCode  
+### Requirements
+### Installing
+###### Method1
+###### Method2 Using Windows Package Manager
+### Configuring
+  - [Best Extension](#)
+
 ## Jupyter Notebook
