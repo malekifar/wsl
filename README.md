@@ -1,4 +1,4 @@
-# How to install Ubuntu 20.04 + WSL2 + Windows Terminal + ZSH + PowerLevel10K + WSLU + WSL Sudo + VScode + Jupyter Notebook
+# How to install Ubuntu 20.04 + WSL2 + VScode + Windows Terminal + ZSH + PowerLevel10K + WSLU + WSL Sudo + Anaconda + Jupyter Notebook
 ## Table of Contents
 - [WSL](#WSL)
   - [Requirements](#Requirements)
