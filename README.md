@@ -32,10 +32,13 @@
     - [Method2 Using PowerShell](#Method2-using-powershell-1)
     - [Method3 Using Windows Package Manager](#)
   - [Configuring](#)
+    - []()
+    - []
 - [WSH](#WSH)
 - [PowerLevel10K](#Installing-PowerLevel10K)
 - [WSLU](#Installing-WSLU)
 - [WSL Sudo](#Installing-WSL-Sudo)
+- [Anaconda](#Anaconda)
 - [Jupyter Notebook](#Jupyter-Notebook)
 
 ## WSL
@@ -210,16 +213,28 @@ Add the ones you want to use to your settings.json file and save it:
 - [Git Tree Compare](https://marketplace.visualstudio.com/items?itemName=letmaik.git-tree-compare)
 - [GitLens — Git supercharged](https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens)
 - [Git History](https://marketplace.visualstudio.com/items?itemName=donjayamanne.githistory)
+- [Python](https://marketplace.visualstudio.com/items?itemName=ms-python.python)
+- [Python Type Hint](https://marketplace.visualstudio.com/items?itemName=njqdev.vscode-python-typehint)
+- [Python Indent](https://marketplace.visualstudio.com/items?itemName=KevinRose.vsc-python-indent)
+- [Tabnine AI Code Completion](https://marketplace.visualstudio.com/items?itemName=TabNine.tabnine-vscode&ssr=false)
+- [Python Preview](https://marketplace.visualstudio.com/items?itemName=dongli.python-preview)
+- [AREPL for python](https://marketplace.visualstudio.com/items?itemName=almenon.arepl)
+- [Python Test Explorer for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=LittleFoxTeam.vscode-python-test-adapter)
+- [Python Docstring Generator](https://marketplace.visualstudio.com/items?itemName=njpwerner.autodocstring)
+- [python snippets](https://marketplace.visualstudio.com/items?itemName=frhtylcn.pythonsnippets)
+- [Visual Studio IntelliCode](https://marketplace.visualstudio.com/items?itemName=VisualStudioExptTeam.vscodeintellicode)
+- [Jupyter](https://marketplace.visualstudio.com/items?itemName=ms-toolsai.jupyter)
+- [Django](https://marketplace.visualstudio.com/items?itemName=batisteo.vscode-django)
 - [Code Spell Checker](https://marketplace.visualstudio.com/items?itemName=streetsidesoftware.code-spell-checker)
 - [Bookmarks](https://marketplace.visualstudio.com/items?itemName=alefragnani.Bookmarks)
 - [Better Comments](https://marketplace.visualstudio.com/items?itemName=aaron-bond.better-comments)
 - [Settings Sync](https://marketplace.visualstudio.com/items?itemName=Shan.code-settings-sync)
 - [Peacock](https://marketplace.visualstudio.com/items?itemName=johnpapa.vscode-peacock&ssr=false#overview)
-- [Bracket Pair Colorizer](https://marketplace.visualstudio.com/items?itemName=CoenraadS.bracket-pair-colorizer)
+- [Bracket Pair Colorizer 2](https://marketplace.visualstudio.com/items?itemName=CoenraadS.bracket-pair-colorizer-2)
+- [Indent-Rainbow](https://marketplace.visualstudio.com/items?itemName=oderwat.indent-rainbow)
+- [Dash](https://marketplace.visualstudio.com/items?itemName=deerawan.vscode-dash)
 - [Auto Rename Tag](https://marketplace.visualstudio.com/items?itemName=formulahendry.auto-rename-tag)
 - [Auto Close Tag](https://marketplace.visualstudio.com/items?itemName=formulahendry.auto-close-tag)
-- 
-- 
 
 ## Windows Terminal
 ### Requirements
@@ -261,5 +276,5 @@ Open Powershell or Command Prompt and Type the following command to install Wind
 ## PowerLevel10K
 ## WSLU
 ## WSL Sudo
-
+## Anaconda
 ## Jupyter Notebook
