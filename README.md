@@ -191,7 +191,7 @@ Type the following command to install Windows Terminal and press Enter:
 ###### Method3 Using Windows Package Manager
 Open Powershell or Command Prompt and Type the following command to install Windows Terminal
 
-`winget install microsoft.windowsterminal`
+`winget install Microsoft.WindowsTerminal`
 ### Configuring
  Windows Terminal will install and open with the default shell (PowerShell), let’s set Ubuntu to be the default console on Windows Terminal. Press the <kbd>Ctrl</kbd> + <kbd>,</kbd> keys or select the Settings menu as in the picture below:
  
@@ -203,10 +203,17 @@ Open Powershell or Command Prompt and Type the following command to install Wind
 ## WSL Sudo
 ## VSCode  
 ### Requirements
+.NET Framework 4.5.2 or higher is required for VS Code. You can download latest version from [here](https://dotnet.microsoft.com/download/dotnet-framework)
 ### Installing
-###### Method1
+###### Method1 Using Setup Files
+Go to [here](https://code.visualstudio.com/download) and download the latest installer for your Windows and follow the installation wizard to set up VS Code.
+
 ###### Method2 Using Windows Package Manager
+Open Powershell or Command Prompt and Type the following command to install Visual Studio Code
+
+`winget install Microsoft.VisualStudioCode`
+
 ### Configuring
-  - [Best Extension](#)
+###### Best Extension
 
 ## Jupyter Notebook
