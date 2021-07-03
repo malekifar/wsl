@@ -215,7 +215,13 @@ Open Powershell or Command Prompt and Type the following command to install Visu
 
 ### Configuring
 To edit your VS Code configuration in JSON, open the command palette (Go to View -> Command Palette, or Press <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>P</kbd>), type `Open Settings JSON` and select `Preferences: Open Settings (JSON)`:
+
+![search setting.json]()
+
 The `settings.json` file with all the non-default VS Code settings will open:
+
+![setting.json]()
+
 You can use these additional settings:
 ```
 "editor.wordSeparators": "`~!@#$%^&*()=+[{]}\\|;:'\",.<>/?",
