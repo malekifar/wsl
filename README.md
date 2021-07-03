@@ -21,7 +21,7 @@
 - [VSCode](#VSCode)
   - [Requirements](#Requirements)
   - [Installing](#)
-    - [Method1 ]
+    - [Method1 Using Setup File](#)
     - [Method2 Using Windows Package Manager](#)
   - [Configuring](#)
   - [Best Extension](#)
@@ -161,46 +161,6 @@ If this is still showing version 1, you can run the upgrade command:
 `wsl --set-version Ubuntu-20.04 2`
 
 Now, You have Ubuntu-20.04 on version 2
-## Windows Terminal
-### Requirements
-Versions 1903 (build 18362) of Windows 10
-### Installing
-###### Method1 Using Microsoft Store
-1. Open Microsoft Store.
-2. Search for the Windows Terminal
-3. Select the Windows Terminal to install on your device.
-
-![Store install](https://raw.githubusercontent.com/malekifar/wsl/main/screenshots/Store%20windows%20terminal.jpg)
-###### Method2 Using PowerShell
-1. Open Powershell and Type the following command to create folder `appx` on `C:\` directory and press Enter:
-
-`mkdir c:\appx`
-
-2. Type the following command to navigate to `appx` directory and press Enter:
-
-`cd c:\appx`
-
-Type the following command to download Windows Termianl and press Enter:
-
-`Invoke-WebRequest -Uri https://github.com/microsoft/terminal/releases/download/v1.8.1444.0/Microsoft.WindowsTerminal_1.8.1444.0_8wekyb3d8bbwe.msixbundle -OutFile Terminal.msixbundle -UseBasicParsing`
-
-Type the following command to install Windows Terminal and press Enter:
-
-`Add-AppxPackage .\Terminal.msixbundle`
-
-###### Method3 Using Windows Package Manager
-Open Powershell or Command Prompt and Type the following command to install Windows Terminal
-
-`winget install Microsoft.WindowsTerminal`
-### Configuring
- Windows Terminal will install and open with the default shell (PowerShell), let’s set Ubuntu to be the default console on Windows Terminal. Press the <kbd>Ctrl</kbd> + <kbd>,</kbd> keys or select the Settings menu as in the picture below:
- 
- ![setting Terminal]()
- 
-## WSH
-## PowerLevel10K
-## WSLU
-## WSL Sudo
 ## VSCode  
 ### Requirements
 .NET Framework 4.5.2 or higher is required for VS Code. You can download latest version from [here](https://dotnet.microsoft.com/download/dotnet-framework)
@@ -249,5 +209,46 @@ Add the ones you want to use to your settings.json file and save it:
 - [Git Graph](https://marketplace.visualstudio.com/items?itemName=mhutchie.git-graph)
 - [Git Tree Compare](https://marketplace.visualstudio.com/items?itemName=letmaik.git-tree-compare)
 - [GitLens — Git supercharged](https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens)
+
+## Windows Terminal
+### Requirements
+Versions 1903 (build 18362) of Windows 10
+### Installing
+###### Method1 Using Microsoft Store
+1. Open Microsoft Store.
+2. Search for the Windows Terminal
+3. Select the Windows Terminal to install on your device.
+
+![Store install](https://raw.githubusercontent.com/malekifar/wsl/main/screenshots/Store%20windows%20terminal.jpg)
+###### Method2 Using PowerShell
+1. Open Powershell and Type the following command to create folder `appx` on `C:\` directory and press Enter:
+
+`mkdir c:\appx`
+
+2. Type the following command to navigate to `appx` directory and press Enter:
+
+`cd c:\appx`
+
+Type the following command to download Windows Termianl and press Enter:
+
+`Invoke-WebRequest -Uri https://github.com/microsoft/terminal/releases/download/v1.8.1444.0/Microsoft.WindowsTerminal_1.8.1444.0_8wekyb3d8bbwe.msixbundle -OutFile Terminal.msixbundle -UseBasicParsing`
+
+Type the following command to install Windows Terminal and press Enter:
+
+`Add-AppxPackage .\Terminal.msixbundle`
+
+###### Method3 Using Windows Package Manager
+Open Powershell or Command Prompt and Type the following command to install Windows Terminal
+
+`winget install Microsoft.WindowsTerminal`
+### Configuring
+ Windows Terminal will install and open with the default shell (PowerShell), let’s set Ubuntu to be the default console on Windows Terminal. Press the <kbd>Ctrl</kbd> + <kbd>,</kbd> keys or select the Settings menu as in the picture below:
+ 
+ ![setting Terminal]()
+ 
+## WSH
+## PowerLevel10K
+## WSLU
+## WSL Sudo
 
 ## Jupyter Notebook
