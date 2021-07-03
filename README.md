@@ -38,7 +38,7 @@
     - [fontFace](#)
     - [icon](#)
   - [Changing Default Console](#)
-- [WSH](#WSH)
+- [ZSH](#ZSH)
   - [Installing](#)
   - [Configuring](#)
     - [fuzzy finder fzf](#)
@@ -286,7 +286,7 @@ Open Powershell or Command Prompt and Type the following command to install Wind
  
  ![setting Terminal]()
  
-## WSH
+## ZSH
 ## PowerLevel10K
 ## WSLU
 ## WSL Sudo
