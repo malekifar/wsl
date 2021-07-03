@@ -234,8 +234,14 @@ I use these additional settings:
 - `window.title` : I added the [foldername] to the beginning of the window title, so I can recognize different go projects instances by their folder names (I can have 5 or 6 open at the same time, this is a saviour!)
 - `files.trimTrailingWhitespace` : when a file is saved, all the extra spaces at the end of a line are trimmed out
 - `editor.tabSize`: I like to use 2 spaces for tabs
+
 Add the ones you want to use to your settings.json file and save it:
 
 ### Best Extension
+- [vscode-icons](https://marketplace.visualstudio.com/items?itemName=vscode-icons-team.vscode-icons)
+- [Project Manager](https://marketplace.visualstudio.com/items?itemName=alefragnani.project-manager)
+- [Git Graph](https://marketplace.visualstudio.com/items?itemName=mhutchie.git-graph)
+- [Git Tree Compare](https://marketplace.visualstudio.com/items?itemName=letmaik.git-tree-compare)
+- [GitLens — Git supercharged](https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens)
 
 ## Jupyter Notebook
