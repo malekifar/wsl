@@ -217,23 +217,24 @@ Open Powershell or Command Prompt and Type the following command to install Visu
 To edit your VS Code configuration in JSON, open the command palette (View -> Command Palette, or Ctrl+Shift+P), type Open Settings JSON and select Preferences: Open Settings (JSON):
 The settings.json file with all the non-default VS Code settings will open:
 I use these additional settings:
-
->"editor.wordSeparators": "`~!@#$%^&*()=+[{]}\\|;:'\",.<>/?",
->"editor.renderWhitespace": "all",
->"diffEditor.ignoreTrimWhitespace": false,
->"update.mode": "none",
->"extensions.autoUpdate": false,
->"window.title": "[${folderName}]${separator}${dirty}${activeEditorShort}${separator}${appName}",
->"files.trimTrailingWhitespace": true,
->"editor.tabSize": 2
-- editor.wordSeparators: I removed the — from the word separators so I can select identifiers with a — in it via double-click on a word (sometimes these can be used in bash scripts)
-- editor.renderWhitespace: I always want to see all the spaces in my source files
-- diffEditor.ignoreTrimWhitespace : when I do a git merge, I want to see the differences due to space changes
-- update.mode and extensions.autoUpdate: I don’t want the extensions to autoupdate, I need to control when they are updated as sometimes with WSL they break
-- window.title : I added the [foldername] to the beginning of the window title, so I can recognize different go projects instances by their folder names (I can have 5 or 6 open at the same time, this is a saviour!)
-- files.trimTrailingWhitespace : when a file is saved, all the extra spaces at the end of a line are trimmed out
-- editor.tabSize: I like to use 2 spaces for tabs
-- Add the ones you want to use to your settings.json file and save it:
+```
+"editor.wordSeparators": "`~!@#$%^&*()=+[{]}\\|;:'\",.<>/?",
+"editor.renderWhitespace": "all",
+"diffEditor.ignoreTrimWhitespace": false,
+"update.mode": "none",
+"extensions.autoUpdate": false,
+"window.title": "[${folderName}]${separator}${dirty}${activeEditorShort}${separator}${appName}",
+"files.trimTrailingWhitespace": true,
+"editor.tabSize": 2
+```
+- `editor.wordSeparators`: I removed the — from the word separators so I can select identifiers with a — in it via double-click on a word (sometimes these can be used in bash scripts)
+- `editor.renderWhitespace`: I always want to see all the spaces in my source files
+- `diffEditor.ignoreTrimWhitespace` : when I do a git merge, I want to see the differences due to space changes
+- `update.mode` and `extensions.autoUpdate`: I don’t want the extensions to autoupdate, I need to control when they are updated as sometimes with WSL they break
+- `window.title` : I added the [foldername] to the beginning of the window title, so I can recognize different go projects instances by their folder names (I can have 5 or 6 open at the same time, this is a saviour!)
+- `files.trimTrailingWhitespace` : when a file is saved, all the extra spaces at the end of a line are trimmed out
+- `editor.tabSize`: I like to use 2 spaces for tabs
+Add the ones you want to use to your settings.json file and save it:
 
 ### Best Extension
 
