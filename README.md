@@ -40,7 +40,7 @@
   - [Changing Default Console](#)
 - [WSH](#WSH)
   - [Installing](#)
-  - [COnfiguring](#)
+  - [Configuring](#)
     - [fuzzy finder fzf](#)
     - [git docker](#)
     - [zsh-completions](#)
