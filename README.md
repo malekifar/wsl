@@ -77,7 +77,7 @@ Press the <kbd>⊞ Win</kbd> + <kbd>R</kbd> keys and run `optionalfeatures` , yo
 
 Check the `Windows Subsystem for Linux` option and click the OK button.Then click the Restart now button.
 ###### Method2 Using PowerShell
-Open PowerShell as an admin and run the following script:
+Open PowerShell as an Administrator (Press <kbd>⊞ Win</kbd> + <kbd>X</kbd> keys then select “Windows PowerShell (Admin) and run the following script:
 
 `dism.exe /online /enable-feature /featurename:Microsoft-Windows-Subsystem-Linux /all /norestart`
 
@@ -149,7 +149,7 @@ Press the <kbd>⊞ Win</kbd> + <kbd>R</kbd> keys and run `optionalfeatures` , yo
 
 Check the `Virtual Machine Platform` option and click the OK button.Then click the Restart now button.
 ###### Method2 Using PowerShell
-Open PowerShell as an admin and run the following script:
+Open PowerShell as an Administrator (Press <kbd>⊞ Win</kbd> + <kbd>X</kbd> keys then select “Windows PowerShell (Admin) and run the following script:
 
 `dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /norestart`
 
