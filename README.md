@@ -189,11 +189,11 @@ Open Powershell or Command Prompt and Type the following command to install Visu
 ### Configuring
 To edit your VS Code configuration in JSON, open the command palette (Go to View -> Command Palette, or Press <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>P</kbd>), type `Open Settings JSON` and select `Preferences: Open Settings (JSON)`:
 
-![search setting.json]()
+![search setting.json](https://raw.githubusercontent.com/malekifar/wsl/main/screenshots/search%20setting.json.jpg)
 
 The `settings.json` file with all the non-default VS Code settings will open:
 
-![setting.json]()
+![setting.json](https://raw.githubusercontent.com/malekifar/wsl/main/screenshots/setting.json.jpg)
 
 You can use these additional settings:
 ```
@@ -215,6 +215,8 @@ You can use these additional settings:
 - `editor.tabSize`: I like to use 2 spaces for tabs
 
 Add the ones you want to use to your settings.json file and save it:
+
+![addedsetting.json](https://raw.githubusercontent.com/malekifar/wsl/main/screenshots/addedsetting.json.jpg)
 
 ### Best Extensions
 - [vscode-icons by VSCode Icons Team](https://marketplace.visualstudio.com/items?itemName=vscode-icons-team.vscode-icons)
