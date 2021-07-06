@@ -217,38 +217,38 @@ You can use these additional settings:
 Add the ones you want to use to your settings.json file and save it:
 
 ### Best Extensions
-- [vscode-icons](https://marketplace.visualstudio.com/items?itemName=vscode-icons-team.vscode-icons)
-- [Project Manager](https://marketplace.visualstudio.com/items?itemName=alefragnani.project-manager)
-- [Git Graph](https://marketplace.visualstudio.com/items?itemName=mhutchie.git-graph)
-- [Git Tree Compare](https://marketplace.visualstudio.com/items?itemName=letmaik.git-tree-compare)
-- [GitLens — Git supercharged](https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens)
-- [Git History](https://marketplace.visualstudio.com/items?itemName=donjayamanne.githistory)
-- [Python](https://marketplace.visualstudio.com/items?itemName=ms-python.python)
-- [Python Type Hint](https://marketplace.visualstudio.com/items?itemName=njqdev.vscode-python-typehint)
-- [Pyright](https://marketplace.visualstudio.com/items?itemName=ms-pyright.pyright&ssr=false#overview)
-- [Python Indent](https://marketplace.visualstudio.com/items?itemName=KevinRose.vsc-python-indent)
-- [Sort lines](https://marketplace.visualstudio.com/items?itemName=Tyriar.sort-lines)
-- [Sourcery](https://marketplace.visualstudio.com/items?itemName=sourcery.sourcery)
-- [Tabnine AI Code Completion](https://marketplace.visualstudio.com/items?itemName=TabNine.tabnine-vscode&ssr=false)
-- [Python Preview](https://marketplace.visualstudio.com/items?itemName=dongli.python-preview)
-- [AREPL for python](https://marketplace.visualstudio.com/items?itemName=almenon.arepl)
-- [Python Test Explorer for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=LittleFoxTeam.vscode-python-test-adapter)
-- [Python Docstring Generator](https://marketplace.visualstudio.com/items?itemName=njpwerner.autodocstring)
-- [python snippets](https://marketplace.visualstudio.com/items?itemName=frhtylcn.pythonsnippets)
-- [Visual Studio IntelliCode](https://marketplace.visualstudio.com/items?itemName=VisualStudioExptTeam.vscodeintellicode)
-- [Jupyter](https://marketplace.visualstudio.com/items?itemName=ms-toolsai.jupyter)
-- [Django](https://marketplace.visualstudio.com/items?itemName=batisteo.vscode-django)
-- [Code Spell Checker](https://marketplace.visualstudio.com/items?itemName=streetsidesoftware.code-spell-checker)
-- [Bookmarks](https://marketplace.visualstudio.com/items?itemName=alefragnani.Bookmarks)
-- [Better Comments](https://marketplace.visualstudio.com/items?itemName=aaron-bond.better-comments)
-- [Settings Sync](https://marketplace.visualstudio.com/items?itemName=Shan.code-settings-sync)
-- [Peacock](https://marketplace.visualstudio.com/items?itemName=johnpapa.vscode-peacock&ssr=false#overview)
-- [Bracket Pair Colorizer 2](https://marketplace.visualstudio.com/items?itemName=CoenraadS.bracket-pair-colorizer-2)
-- [Indent-Rainbow](https://marketplace.visualstudio.com/items?itemName=oderwat.indent-rainbow)
-- [Indenticator](https://marketplace.visualstudio.com/items?itemName=SirTori.indenticator)
-- [Dash](https://marketplace.visualstudio.com/items?itemName=deerawan.vscode-dash)
-- [Auto Rename Tag](https://marketplace.visualstudio.com/items?itemName=formulahendry.auto-rename-tag)
-- [Auto Close Tag](https://marketplace.visualstudio.com/items?itemName=formulahendry.auto-close-tag)
+- [vscode-icons by VSCode Icons Team](https://marketplace.visualstudio.com/items?itemName=vscode-icons-team.vscode-icons)
+- [Project Manager by Alessandro Fragnani](https://marketplace.visualstudio.com/items?itemName=alefragnani.project-manager)
+- [Git Graph by mhutchie](https://marketplace.visualstudio.com/items?itemName=mhutchie.git-graph)
+- [Git Tree Compare by Maik Riechert](https://marketplace.visualstudio.com/items?itemName=letmaik.git-tree-compare)
+- [GitLens — Git supercharged by Eric Amodio](https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens)
+- [Git History by Don Jayamanne](https://marketplace.visualstudio.com/items?itemName=donjayamanne.githistory)
+- [Python by Microsoft](https://marketplace.visualstudio.com/items?itemName=ms-python.python)
+- [Python Type Hint by njqdev](https://marketplace.visualstudio.com/items?itemName=njqdev.vscode-python-typehint)
+- [Pyright by ms-pyright](https://marketplace.visualstudio.com/items?itemName=ms-pyright.pyright&ssr=false#overview)
+- [Python Indent by Kevin Rose](https://marketplace.visualstudio.com/items?itemName=KevinRose.vsc-python-indent)
+- [Sort lines by Daniel Imms](https://marketplace.visualstudio.com/items?itemName=Tyriar.sort-lines)
+- [Sourcery by sourcery](https://marketplace.visualstudio.com/items?itemName=sourcery.sourcery)
+- [Tabnine AI Code Completion by TabNine](https://marketplace.visualstudio.com/items?itemName=TabNine.tabnine-vscode&ssr=false)
+- [Python Preview by dongli](https://marketplace.visualstudio.com/items?itemName=dongli.python-preview)
+- [AREPL for python by Almenon](https://marketplace.visualstudio.com/items?itemName=almenon.arepl)
+- [Python Test Explorer for Visual Studio Code by Little Fox Team](https://marketplace.visualstudio.com/items?itemName=LittleFoxTeam.vscode-python-test-adapter)
+- [Python Docstring Generator by Nils Werner](https://marketplace.visualstudio.com/items?itemName=njpwerner.autodocstring)
+- [python snippets by Ferhat Yalçın](https://marketplace.visualstudio.com/items?itemName=frhtylcn.pythonsnippets)
+- [Visual Studio IntelliCode by Microsoft](https://marketplace.visualstudio.com/items?itemName=VisualStudioExptTeam.vscodeintellicode)
+- [Jupyter by Microsoft](https://marketplace.visualstudio.com/items?itemName=ms-toolsai.jupyter)
+- [Django by Baptiste Darthenay](https://marketplace.visualstudio.com/items?itemName=batisteo.vscode-django)
+- [Code Spell Checker by Street Side Software](https://marketplace.visualstudio.com/items?itemName=streetsidesoftware.code-spell-checker)
+- [Bookmarks by Alessandro Fragnani](https://marketplace.visualstudio.com/items?itemName=alefragnani.Bookmarks)
+- [Better Comments by Aaron Bond](https://marketplace.visualstudio.com/items?itemName=aaron-bond.better-comments)
+- [Settings Sync by Shan Khan](https://marketplace.visualstudio.com/items?itemName=Shan.code-settings-sync)
+- [Peacock by John Papa](https://marketplace.visualstudio.com/items?itemName=johnpapa.vscode-peacock&ssr=false#overview)
+- [Bracket Pair Colorizer 2 by CoenraadS](https://marketplace.visualstudio.com/items?itemName=CoenraadS.bracket-pair-colorizer-2)
+- [Indent-Rainbow by oderwat](https://marketplace.visualstudio.com/items?itemName=oderwat.indent-rainbow)
+- [Indenticator by SirTori](https://marketplace.visualstudio.com/items?itemName=SirTori.indenticator)
+- [Dash by Budi Irawan](https://marketplace.visualstudio.com/items?itemName=deerawan.vscode-dash)
+- [Auto Rename Tag by Jun Han](https://marketplace.visualstudio.com/items?itemName=formulahendry.auto-rename-tag)
+- [Auto Close Tag by Jun Han](https://marketplace.visualstudio.com/items?itemName=formulahendry.auto-close-tag)
 
 ## Windows Terminal
 ### Requirements
@@ -286,7 +286,19 @@ Open Powershell or Command Prompt and Type the following command to install Wind
  
  ![setting Terminal]()
  
+ 
+###### Changing Default Console
+
+###### commandline
+
+###### colorScheme
+
+###### fontFace
+
+###### icon
+
 ## ZSH
+
 ## PowerLevel10K
 ## WSLU
 ## WSL Sudo
