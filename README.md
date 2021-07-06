@@ -217,6 +217,10 @@ You can use these additional settings:
 Add the ones you want to use to your settings.json file and save it:
 
 ![addedsetting.json](https://raw.githubusercontent.com/malekifar/wsl/main/screenshots/addedsetting.json.jpg)
+### Install an extension
+To install an extension, select the Install button. Once the installation is complete, the Install button will change to the Manage gear button.
+
+![Install an extension](https://raw.githubusercontent.com/malekifar/wsl/main/screenshots/Install%20an%20extension.jpg)
 
 ### Best Extensions
 - [vscode-icons by VSCode Icons Team](https://marketplace.visualstudio.com/items?itemName=vscode-icons-team.vscode-icons)
