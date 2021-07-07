@@ -44,7 +44,7 @@
     - [fuzzy finder fzf](#)
     - [git docker](#)
     - [zsh-completions](#)
-    - [kubectl](#)
+    - [Syntax Highlighting](#)
 - [PowerLevel10K](#Installing-PowerLevel10K)
 - [WSLU](#Installing-WSLU)
 - [WSL Sudo](#Installing-WSL-Sudo)
@@ -287,7 +287,12 @@ Now we can install oh-my-zsh
 Notice that oh-my-zsh updated your `~/.bashrc` file and made a backup of the old one. Also notice that the prompt changed now, it is just your username.
 
 OK, we are readty to customize oh-my-zsh next.
-
+### Configuring
+###### fuzzy finder fzf
+###### git docker
+###### zsh-completions
+###### Syntax Highlighting
+`sudo apt-get install zsh-syntax-highlighting && echo "source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh" >> ~/.zshrc`
 ## PowerLevel10K
 ## WSLU
 ## WSL Sudo
