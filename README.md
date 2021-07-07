@@ -100,10 +100,6 @@ Once you complete the steps, the environment will be configured to download and 
 
 `cd C:\Temp; Invoke-WebRequest -Uri https://aka.ms/wslubuntu2004arm -OutFile Ubuntu.appx -UseBasicParsing; Add-AppxPackage .\Ubuntu.appx`
 
-Type the following command to install Ubuntu and press Enter:
-
-`Add-AppxPackage .\Ubuntu.appx`
-
 ###### Method3 Using Windows Package Manager
 To use Windows Package Manager, you should install it first:
 
@@ -144,7 +140,7 @@ Once your PC has rebooted, we need to update the WSL 2 Linux kernel.Follow the d
 
 OK, now it is time to set WSL2 to be the default for all WSL installations. Trust me, you don’t need to use WSL version 1 ever again. Open PowerShell and run:
 
-`wsl --set-default-version 2`
+`wsl --set-default-version 2; wsl --set-version Ubuntu-20.04 2; wsl --list -v`
 
 The result is not very exciting, but it will come handy soon.Now ensure that WSL is correctly using version 2 for Ubuntu-20.04:
 
