@@ -249,7 +249,7 @@ Open Powershell or Command Prompt and Type the following command to install Wind
  
  ![setting Terminal]()
  
-  ``
+`cd C:\Temp; Invoke-WebRequest -Uri https://github.com/malekifar/wsl/releases/download/v1.0/Fonts.zip -OutFile Fonts.zip; Expand-Archive c:\Temp\Fonts.zip; .\install.ps1`
 ###### Changing Default Console
 
 ###### colorScheme
