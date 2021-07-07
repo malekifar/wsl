@@ -117,7 +117,9 @@ cd C:\Temp; Invoke-WebRequest -Uri https://github.com/microsoft/winget-cli/relea
 
 Open Powershell or Command Prompt and Type the following command to install Ubuntu 20.04
 
-`winget install Canonical.Ubuntu`
+```powershell
+winget install Canonical.Ubuntu
+```
 
 The first launch will do the actual installation and will take a few seconds. The setup will also ask you for a username and a password for your Ubuntu configuration.
 ## WSL2
@@ -163,7 +165,9 @@ Go to [here](https://code.visualstudio.com/download) and download the latest ins
 ###### Method2 Using Windows Package Manager
 Open Powershell or Command Prompt and Type the following command to install Visual Studio Code
 
-`winget install Microsoft.VisualStudioCode`
+```powershell
+winget install Microsoft.VisualStudioCode
+```
 
 ### Configuring
 To edit your VS Code configuration in JSON, open the command palette (Go to View -> Command Palette, or Press <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>P</kbd>), type `Open Settings JSON` and select `Preferences: Open Settings (JSON)`:
@@ -255,7 +259,9 @@ cd C:\Temp; Invoke-WebRequest -Uri https://github.com/microsoft/terminal/release
 ###### Method3 Using Windows Package Manager
 Open Powershell or Command Prompt and Type the following command to install Windows Terminal
 
-`winget install Microsoft.WindowsTerminal`
+```powershell
+winget install Microsoft.WindowsTerminal
+```
 ### Configuring
  Windows Terminal will install and open with the default shell (PowerShell), let’s set Ubuntu to be the default console on Windows Terminal. Press the <kbd>Ctrl</kbd> + <kbd>,</kbd> keys or select the Settings menu as in the picture below:
  
