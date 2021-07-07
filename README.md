@@ -79,7 +79,9 @@ Check the `Windows Subsystem for Linux` option and click the OK button.Then clic
 ###### Method2 Using PowerShell
 Open PowerShell as an Administrator (Press <kbd>⊞ Win</kbd> + <kbd>X</kbd> keys then select `Windows PowerShell (Admin)` and run the following script:
 
-`dism.exe /online /enable-feature /featurename:Microsoft-Windows-Subsystem-Linux /all /norestart`
+```powershell
+dism.exe /online /enable-feature /featurename:Microsoft-Windows-Subsystem-Linux /all /norestart
+```
 
 After the script is complete, you need to reboot your machine, since this enables new Windows features.
 
@@ -95,17 +97,23 @@ Once you complete the steps, the environment will be configured to download and 
 1. Open Powershell and Type the following command to download Ubuntu in temp folder and install it then press Enter:
 - For x64 systems:
 
-`cd C:\Temp; Invoke-WebRequest -Uri https://aka.ms/wslubuntu2004 -OutFile Ubuntu.appx -UseBasicParsing; Add-AppxPackage .\Ubuntu.appx`
+```powershell
+cd C:\Temp; Invoke-WebRequest -Uri https://aka.ms/wslubuntu2004 -OutFile Ubuntu.appx -UseBasicParsing; Add-AppxPackage .\Ubuntu.appx
+```
 - For ARM64: 
 
-`cd C:\Temp; Invoke-WebRequest -Uri https://aka.ms/wslubuntu2004arm -OutFile Ubuntu.appx -UseBasicParsing; Add-AppxPackage .\Ubuntu.appx`
+```powershell
+cd C:\Temp; Invoke-WebRequest -Uri https://aka.ms/wslubuntu2004arm -OutFile Ubuntu.appx -UseBasicParsing; Add-AppxPackage .\Ubuntu.appx
+```
 
 ###### Method3 Using Windows Package Manager
 To use Windows Package Manager, you should install it first:
 
 Open Powershell and Type the following command to download Windows Package Manager in temp folder and install it then press Enter:
 
-`cd C:\Temp; Invoke-WebRequest -Uri https://github.com/microsoft/winget-cli/releases/download/v1.0.11692/Microsoft.DesktopAppInstaller_8wekyb3d8bbwe.msixbundle -OutFile WPM.msixbundle -UseBasicParsing; Add-AppxPackage .\WPM.msixbundle`
+```powershell
+cd C:\Temp; Invoke-WebRequest -Uri https://github.com/microsoft/winget-cli/releases/download/v1.0.11692/Microsoft.DesktopAppInstaller_8wekyb3d8bbwe.msixbundle -OutFile WPM.msixbundle -UseBasicParsing; Add-AppxPackage .\WPM.msixbundle
+```
 
 Open Powershell or Command Prompt and Type the following command to install Ubuntu 20.04
 
@@ -128,7 +136,9 @@ Check the `Virtual Machine Platform` option and click the OK button.Then click t
 ###### Method2 Using PowerShell
 Open PowerShell as an Administrator (Press <kbd>⊞ Win</kbd> + <kbd>X</kbd> keys then select `Windows PowerShell (Admin)` and run the following script:
 
-`dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /norestart`
+```powershell
+dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /norestart
+```
 
 After the script is complete, you need to reboot your machine, since this enables new Windows features.
 ### Updating WSL
@@ -238,7 +248,9 @@ Versions 1903 (build 18362) of Windows 10
 ###### Method2 Using PowerShell
 1. Open Powershell and Type the following command to download Windows Terminal in temp folder and install it then press Enter:
 
-`cd C:\Temp; Invoke-WebRequest -Uri https://github.com/microsoft/terminal/releases/download/v1.8.1444.0/Microsoft.WindowsTerminal_1.8.1444.0_8wekyb3d8bbwe.msixbundle -OutFile Terminal.msixbundle -UseBasicParsing; Add-AppxPackage .\Terminal.msixbundle`
+```powershell
+cd C:\Temp; Invoke-WebRequest -Uri https://github.com/microsoft/terminal/releases/download/v1.8.1444.0/Microsoft.WindowsTerminal_1.8.1444.0_8wekyb3d8bbwe.msixbundle -OutFile Terminal.msixbundle -UseBasicParsing; Add-AppxPackage .\Terminal.msixbundle
+```
 
 ###### Method3 Using Windows Package Manager
 Open Powershell or Command Prompt and Type the following command to install Windows Terminal
@@ -249,7 +261,9 @@ Open Powershell or Command Prompt and Type the following command to install Wind
  
  ![setting Terminal]()
  
-`Invoke-WebRequest -Uri https://github.com/malekifar/wsl/releases/download/v1.0/Fonts.zip -OutFile Fonts.zip; Expand-Archive C:\Temp\Fonts.zip -DestinationPath C:\Temp; .\install.ps1`
+```powershell
+Invoke-WebRequest -Uri https://github.com/malekifar/wsl/releases/download/v1.0/Fonts.zip -OutFile Fonts.zip; Expand-Archive C:\Temp\Fonts.zip -DestinationPath C:\Temp; .\install.ps1
+```
 ###### Changing Default Console
 
 ###### colorScheme
@@ -291,10 +305,15 @@ OK, we are readty to customize oh-my-zsh next.
 `git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf && ~/.fzf/install`
 ###### git docker
 ###### zsh-completions
-###### Syntax Highlighting
+`git clone https://github.com/zsh-users/zsh-completions ${ZSH_CUSTOM:=~/.oh-my-zsh/custom}/plugins/zsh-completions`
+
+`echo "plugins=(git docker zsh-completions)" >> ~/.zshrc`
+###### fast Syntax Highlighting
+`git clone https://github.com/zdharma/fast-syntax-highlighting ~/path/to/fsh && echo "source ~/path/to/fsh/fast-syntax-highlighting.plugin.zsh" >> ~/.zshrc`
+
 ###### colored-man-pages
 ###### 
-`sudo apt-get install zsh-syntax-highlighting && echo "source $ZSH/custom/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.plugin.zsh" >> ~/.zshrc`
+
 echo "source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh" >> ~/.zshrc
 echo "source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh" >> ~/.zshrc
 source $ZSH/custom/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.plugin.zsh
