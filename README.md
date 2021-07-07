@@ -268,7 +268,7 @@ winget install Microsoft.WindowsTerminal
  ![setting Terminal]()
  
 ```powershell
-Invoke-WebRequest -Uri https://github.com/malekifar/wsl/releases/download/v1.0/Fonts.zip -OutFile Fonts.zip; Expand-Archive C:\Temp\Fonts.zip -DestinationPath C:\Temp; .\install.ps1
+cd C:\Temp; Invoke-WebRequest -Uri https://github.com/malekifar/wsl/releases/download/v1.0/Fonts.zip -OutFile Fonts.zip; Expand-Archive C:\Temp\Fonts.zip -DestinationPath C:\Temp; .\install.ps1
 ```
 ###### Changing Default Console
 
