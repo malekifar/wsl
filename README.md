@@ -272,9 +272,8 @@ Open a new terminal and the initial zsh prompt will show up, signaling that zsh 
 
 Let’s check again that zsh is the default shell:
 
-`echo $SHELL`
+`echo $SHELL && $SHELL --version`
 
-`$SHELL --version`
 you should get the following results:
 
 ![shell version]()
@@ -287,12 +286,18 @@ Now we can install oh-my-zsh
 Notice that oh-my-zsh updated your `~/.bashrc` file and made a backup of the old one. Also notice that the prompt changed now, it is just your username.
 
 OK, we are readty to customize oh-my-zsh next.
-### Configuring
+### ZSH Plugins
 ###### fuzzy finder fzf
+`git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf && ~/.fzf/install`
 ###### git docker
 ###### zsh-completions
 ###### Syntax Highlighting
-`sudo apt-get install zsh-syntax-highlighting && echo "source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh" >> ~/.zshrc`
+###### colored-man-pages
+###### 
+`sudo apt-get install zsh-syntax-highlighting && echo "source $ZSH/custom/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.plugin.zsh" >> ~/.zshrc`
+echo "source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh" >> ~/.zshrc
+echo "source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh" >> ~/.zshrc
+source $ZSH/custom/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.plugin.zsh
 ## PowerLevel10K
 ## WSLU
 ## WSL Sudo
