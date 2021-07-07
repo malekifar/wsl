@@ -92,21 +92,13 @@ Once you complete the steps, the environment will be configured to download and 
 
 ![Store install](https://raw.githubusercontent.com/malekifar/wsl/main/screenshots/Store%20Ubuntu-20.04.jpg)
 ###### Method2 Using PowerShell
-1. Open Powershell and Type the following command to create folder `appx` on `C:\` directory and press Enter:
-
-`mkdir c:\appx`
-
-2. Type the following command to navigate to `appx` directory and press Enter:
-
-`cd c:\appx`
-
-Type the following command to download Ubuntu and press Enter:
+1. Open Powershell and Type the following command to download Ubuntu in temp folder and install it then press Enter:
 - For x64 systems:
 
-`Invoke-WebRequest -Uri https://aka.ms/wslubuntu2004 -OutFile Ubuntu.appx -UseBasicParsing`
+`cd C:\Temp; Invoke-WebRequest -Uri https://aka.ms/wslubuntu2004 -OutFile Ubuntu.appx -UseBasicParsing; Add-AppxPackage .\Ubuntu.appx`
 - For ARM64: 
 
-`Invoke-WebRequest -Uri https://aka.ms/wslubuntu2004arm -OutFile Ubuntu.appx -UseBasicParsing`
+`cd C:\Temp; Invoke-WebRequest -Uri https://aka.ms/wslubuntu2004arm -OutFile Ubuntu.appx -UseBasicParsing; Add-AppxPackage .\Ubuntu.appx`
 
 Type the following command to install Ubuntu and press Enter:
 
@@ -115,21 +107,10 @@ Type the following command to install Ubuntu and press Enter:
 ###### Method3 Using Windows Package Manager
 To use Windows Package Manager, you should install it first:
 
-1. Open Powershell and Type the following command to create folder `appx` on `C:\` directory and press Enter:
+Open Powershell and Type the following command to download Windows Package Manager in temp folder and install it then press Enter:
 
-`mkdir c:\appx`
+`cd C:\Temp; Invoke-WebRequest -Uri https://github.com/microsoft/winget-cli/releases/download/v1.0.11692/Microsoft.DesktopAppInstaller_8wekyb3d8bbwe.msixbundle -OutFile WPM.msixbundle -UseBasicParsing; Add-AppxPackage .\WPM.msixbundle`
 
-2. Type the following command to navigate to `appx` directory and press Enter:
-
-`cd c:\appx`
-
-Type the following command to download Ubuntu and press Enter:
-
-`Invoke-WebRequest -Uri https://github.com/microsoft/winget-cli/releases/download/v1.0.11692/Microsoft.DesktopAppInstaller_8wekyb3d8bbwe.msixbundle -OutFile WPM.msixbundle -UseBasicParsing`
-
-Type the following command to install Ubuntu and press Enter:
-
-`Add-AppxPackage .\WPM.msixbundle`
 Open Powershell or Command Prompt and Type the following command to install Ubuntu 20.04
 
 `winget install Canonical.Ubuntu`
