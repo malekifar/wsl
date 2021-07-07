@@ -295,8 +295,6 @@ Open Powershell or Command Prompt and Type the following command to install Wind
  
 ###### Changing Default Console
 
-###### commandline
-
 ###### colorScheme
 
 ###### fontFace
@@ -304,6 +302,34 @@ Open Powershell or Command Prompt and Type the following command to install Wind
 ###### icon
 
 ## ZSH
+### Installing ZSH
+Type the following commands to update apt and install zsh then press Enter:
+
+`sudo apt update`
+
+`sudo apt install zsh`
+
+Now set zsh to be your default shell:
+`chsh -s $(which zsh)`
+Open a new terminal and the initial zsh prompt will show up, signaling that zsh is now the default shell. At this point pick <kbd>2</kbd> — it will populate the zsh configuration file `~/.zshrc` with defaults.
+
+Let’s check again that zsh is the default shell:
+
+`echo $SHELL`
+
+`$SHELL --version`
+you should get the following results:
+
+![shell version]()
+
+### Installing oh-my-zsh
+Now we can install oh-my-zsh
+
+`sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)`
+
+Notice that oh-my-zsh updated your `~/.bashrc` file and made a backup of the old one. Also notice that the prompt changed now, it is just your username.
+
+OK, we are readty to customize oh-my-zsh next.
 
 ## PowerLevel10K
 ## WSLU
