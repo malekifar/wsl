@@ -140,15 +140,7 @@ Once your PC has rebooted, we need to update the WSL 2 Linux kernel.Follow the d
 
 OK, now it is time to set WSL2 to be the default for all WSL installations. Trust me, you don’t need to use WSL version 1 ever again. Open PowerShell and run:
 
-`wsl --set-default-version 2; wsl --set-version Ubuntu-20.04 2; wsl --list -v`
-
-The result is not very exciting, but it will come handy soon.Now ensure that WSL is correctly using version 2 for Ubuntu-20.04:
-
-`wsl --list -v`
-
-If this is still showing version 1, you can run the upgrade command:
-
-`wsl --set-version Ubuntu-20.04 2`
+`wsl --set-default-version 2; wsl --set-version Ubuntu-20.04 2; wsl -l -v`
 
 Now, You have Ubuntu-20.04 on version 2
 ## VSCode  
