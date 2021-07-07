@@ -236,21 +236,9 @@ Versions 1903 (build 18362) of Windows 10
 
 ![Store install](https://raw.githubusercontent.com/malekifar/wsl/main/screenshots/Store%20windows%20terminal.jpg)
 ###### Method2 Using PowerShell
-1. Open Powershell and Type the following command to create folder `appx` on `C:\` directory and press Enter:
+1. Open Powershell and Type the following command to download Windows Terminal in temp folder and install it then press Enter:
 
-`mkdir c:\appx`
-
-2. Type the following command to navigate to `appx` directory and press Enter:
-
-`cd c:\appx`
-
-Type the following command to download Windows Termianl and press Enter:
-
-`Invoke-WebRequest -Uri https://github.com/microsoft/terminal/releases/download/v1.8.1444.0/Microsoft.WindowsTerminal_1.8.1444.0_8wekyb3d8bbwe.msixbundle -OutFile Terminal.msixbundle -UseBasicParsing`
-
-Type the following command to install Windows Terminal and press Enter:
-
-`Add-AppxPackage .\Terminal.msixbundle`
+`cd C:\Temp; Invoke-WebRequest -Uri https://github.com/microsoft/terminal/releases/download/v1.8.1444.0/Microsoft.WindowsTerminal_1.8.1444.0_8wekyb3d8bbwe.msixbundle -OutFile Terminal.msixbundle -UseBasicParsing; Add-AppxPackage .\Terminal.msixbundle`
 
 ###### Method3 Using Windows Package Manager
 Open Powershell or Command Prompt and Type the following command to install Windows Terminal
@@ -261,7 +249,7 @@ Open Powershell or Command Prompt and Type the following command to install Wind
  
  ![setting Terminal]()
  
- 
+  ``
 ###### Changing Default Console
 
 ###### colorScheme
