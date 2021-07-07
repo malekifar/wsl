@@ -282,17 +282,21 @@ Invoke-WebRequest -Uri https://github.com/malekifar/wsl/releases/download/v1.0/F
 ### Installing ZSH
 Type the following commands to update apt and install zsh then press Enter:
 
-`sudo apt update`
-
-`sudo apt install zsh`
+```zsh
+sudo apt update && sudo apt install zsh
+```
 
 Now set zsh to be your default shell:
-`chsh -s $(which zsh)`
+```zsh
+chsh -s $(which zsh)
+```
 Open a new terminal and the initial zsh prompt will show up, signaling that zsh is now the default shell. At this point pick <kbd>2</kbd> — it will populate the zsh configuration file `~/.zshrc` with defaults.
 
 Let’s check again that zsh is the default shell:
 
-`echo $SHELL && $SHELL --version`
+```zsh
+echo $SHELL && $SHELL --version
+```
 
 you should get the following results:
 
@@ -301,31 +305,39 @@ you should get the following results:
 ### Installing oh-my-zsh
 Now we can install oh-my-zsh
 
-`sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)`
+```zsh
+sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)
+```
 
 Notice that oh-my-zsh updated your `~/.bashrc` file and made a backup of the old one. Also notice that the prompt changed now, it is just your username.
 
 OK, we are readty to customize oh-my-zsh next.
 ### ZSH Plugins
 ###### fuzzy finder fzf
-`git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf && ~/.fzf/install`
+```zsh
+git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf && ~/.fzf/install
+```
 ###### git docker
 ###### zsh-completions
-`git clone https://github.com/zsh-users/zsh-completions ${ZSH_CUSTOM:=~/.oh-my-zsh/custom}/plugins/zsh-completions`
+```zsh
+git clone https://github.com/zsh-users/zsh-completions ${ZSH_CUSTOM:=~/.oh-my-zsh/custom}/plugins/zsh-completions
+```
 
-`echo "plugins=(git docker zsh-completions)" >> ~/.zshrc`
+```zsh
+echo "plugins=(git docker zsh-completions)" >> ~/.zshrc
+```
 ###### fast Syntax Highlighting
-`git clone https://github.com/zdharma/fast-syntax-highlighting ~/path/to/fsh && echo "source ~/path/to/fsh/fast-syntax-highlighting.plugin.zsh" >> ~/.zshrc`
+```zsh
+git clone https://github.com/zdharma/fast-syntax-highlighting ~/path/to/fsh && echo "source ~/path/to/fsh/fast-syntax-highlighting.plugin.zsh" >> ~/.zshrc
+```
 
 ###### colored-man-pages
 ###### 
-
-echo "source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh" >> ~/.zshrc
-echo "source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh" >> ~/.zshrc
-source $ZSH/custom/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.plugin.zsh
 ## PowerLevel10K
 ## WSLU
 ## WSL Sudo
 ## Anaconda
-`source ~/anaconda3/etc/profile.d/conda.sh && conda init bash && conda init zsh`
+```zsh
+source ~/anaconda3/etc/profile.d/conda.sh && conda init bash && conda init zsh
+```
 ## Jupyter Notebook
