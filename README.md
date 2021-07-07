@@ -204,7 +204,8 @@ Add the ones you want to use to your settings.json file and save it:
 To install an extension, select the Install button. Once the installation is complete, the Install button will change to the Manage gear button.
 
 ![Install an extension](https://raw.githubusercontent.com/malekifar/wsl/main/screenshots/Install%20an%20extension.jpg)
-
+### Extensions
+VSCode has many extensions. You can find a list of pre-installed extensions at [here](https://marketplace.visualstudio.com)
 ### Best Extensions
 - [vscode-icons by VSCode Icons Team](https://marketplace.visualstudio.com/items?itemName=vscode-icons-team.vscode-icons)
 - [Project Manager by Alessandro Fragnani](https://marketplace.visualstudio.com/items?itemName=alefragnani.project-manager)
@@ -236,6 +237,9 @@ To install an extension, select the Install button. Once the installation is com
 - [Indent-Rainbow by oderwat](https://marketplace.visualstudio.com/items?itemName=oderwat.indent-rainbow)
 - [Indenticator by SirTori](https://marketplace.visualstudio.com/items?itemName=SirTori.indenticator)
 - [Dash by Budi Irawan](https://marketplace.visualstudio.com/items?itemName=deerawan.vscode-dash)
+- [Material Theme by Equinusocio](https://marketplace.visualstudio.com/items?itemName=Equinusocio.vsc-material-theme)
+- [Noctis by Liviu Schera](https://marketplace.visualstudio.com/items?itemName=liviuschera.noctis)
+- [Solarized by Ryan Olson](https://marketplace.visualstudio.com/items?itemName=ryanolsonx.solarized)
 - [Auto Rename Tag by Jun Han](https://marketplace.visualstudio.com/items?itemName=formulahendry.auto-rename-tag)
 - [Auto Close Tag by Jun Han](https://marketplace.visualstudio.com/items?itemName=formulahendry.auto-close-tag)
 
@@ -313,11 +317,12 @@ Notice that oh-my-zsh updated your `~/.bashrc` file and made a backup of the old
 
 OK, we are readty to customize oh-my-zsh next.
 ### ZSH Plugins
+Oh-My-ZSH has many plugins. You can find a list of pre-installed plugins at [here](https://github.com/robbyrussell/oh-my-zsh/tree/master/plugins)
+
 ###### fuzzy finder fzf
 ```zsh
 git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf && ~/.fzf/install
 ```
-###### git docker
 ###### zsh-completions
 ```zsh
 git clone https://github.com/zsh-users/zsh-completions ${ZSH_CUSTOM:=~/.oh-my-zsh/custom}/plugins/zsh-completions
