@@ -292,4 +292,5 @@ OK, we are readty to customize oh-my-zsh next.
 ## WSLU
 ## WSL Sudo
 ## Anaconda
+`source ~/anaconda3/etc/profile.d/conda.sh && conda init bash && conda init zsh`
 ## Jupyter Notebook
