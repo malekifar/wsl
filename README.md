@@ -323,6 +323,11 @@ Oh-My-ZSH has many plugins. You can find a list of pre-installed plugins at [her
 ```zsh
 git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf && ~/.fzf/install
 ```
+###### autojump
+###### zsh-autosuggestions
+```zsh
+git clone https://github.com/zsh-users/zsh-autosuggestions ~/.zsh/zsh-autosuggestions && echo "source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh" >> ~/.zshrc
+```
 ###### zsh-completions
 ```zsh
 git clone https://github.com/zsh-users/zsh-completions ${ZSH_CUSTOM:=~/.oh-my-zsh/custom}/plugins/zsh-completions
