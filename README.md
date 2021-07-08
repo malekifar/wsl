@@ -426,6 +426,7 @@ This is a collection of utilities for Windows 10 Linux Subsystem, such as retrie
 ```zsh
 sudo apt install gnupg2 apt-transport-https && wget -O - https://pkg.wslutiliti.es/public.key | sudo tee -a /etc/apt/trusted.gpg.d/wslu.asc && echo "deb https://pkg.wslutiliti.es/debian buster main" | sudo tee -a /etc/apt/sources.list && sudo apt update && sudo apt install wslu 
 ```
+`wslview -r $(wslpath -au 'C:\Windows\SystemApps\Microsoft.MicrosoftEdge_8wekyb3d8bbwe\MicrosoftEdge.exe`
 ## WSL Sudo
 This tool allows you to run applications in windows elevated user mode from a non-elevated wsl shell. To install it:
 ```zsh
