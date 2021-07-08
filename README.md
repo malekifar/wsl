@@ -95,7 +95,7 @@ Once you complete the steps, the environment will be configured to download and 
 ![Store install](https://raw.githubusercontent.com/malekifar/wsl/main/screenshots/Store%20Ubuntu-20.04.jpg)
 ###### Method2 Using PowerShell
 1. Open Powershell and Type the following command to download Ubuntu in temp folder and install it then press Enter:
-- For x64 systems:
+- For x64:
 
 ```powershell
 cd C:\Temp; Invoke-WebRequest -Uri https://aka.ms/wslubuntu2004 -OutFile Ubuntu.appx -UseBasicParsing; Add-AppxPackage .\Ubuntu.appx
@@ -282,7 +282,71 @@ cd C:\Temp; Invoke-WebRequest -Uri https://github.com/malekifar/wsl/releases/dow
 ###### fontFace
 
 ###### icon
+## Anaconda
+### Installing
 
+- For x86
+```zsh
+cd /tmp && curl https://repo.anaconda.com/archive/Anaconda3-2021.05-Linux-x86_64.sh --output anaconda.sh && bash anaconda.sh
+```
+- For ARM64
+```zsh
+cd /tmp && https://repo.anaconda.com/archive/Anaconda3-2021.05-Linux-aarch64.sh --output anaconda.sh && bash anaconda.sh
+```
+```
+Output
+
+Welcome to Anaconda3 2020.02
+
+In order to continue the installation process, please review the license
+agreement.
+Please, press ENTER to continue
+>>>  
+```
+Press <kbd>Enter</kbd> to continue and then press <kbd>Enter</kbd> to read through the license. Once you’re done reading the license, you’ll be prompted to approve the license terms:
+```
+Output
+Do you approve the license terms? [yes|no]
+```
+As long as you agree, type `yes`.
+```
+Output
+
+Anaconda3 will now be installed into this location:
+/home/usename/anaconda3
+
+  - Press ENTER to confirm the location
+  - Press CTRL-C to abort the installation
+  - Or specify a different location below
+
+[/home/username/anaconda3] >>> 
+```
+At this point, you’ll be prompted to choose the location of the installation. You can press <kbd>Enter</kbd> to accept the default location, or specify a different location to modify it.
+```
+Output
+...
+Preparing transaction: done
+Executing transaction: done
+installation finished.
+Do you wish the installer to initialize Anaconda3
+by running conda init? [yes|no]
+[no] >>> 
+```
+Type `yes` so that you can initialize Anaconda3. You’ll receive some output that states changes made in various directories. One of the lines you receive will thank you for installing Anaconda.
+```
+Output
+
+Thank you for installing Anaconda3!
+```
+### Conda init
+```zsh
+source ~/anaconda3/etc/profile.d/conda.sh && conda init bash && conda init zsh
+```
+## Git
+Install Git using apt-get:
+```zsh
+sudo apt-get update && sudo apt-get install git
+```
 ## ZSH
 ### Installing ZSH
 Type the following commands to update apt and install zsh then press Enter:
@@ -353,8 +417,5 @@ echo "plugins=(git docker zsh-completions)" >> ~/.zshrc
 ## PowerLevel10K
 ## WSLU
 ## WSL Sudo
-## Anaconda
-```zsh
-source ~/anaconda3/etc/profile.d/conda.sh && conda init bash && conda init zsh
-```
+
 ## Jupyter Notebook
