@@ -422,7 +422,7 @@ echo "plugins=(git docker zsh-completions)" >> ~/.zshrc
 
 ## PowerLevel10K
 ## WSLU
-This is a collection of utilities for Windows 10 Linux Subsystem, such as retrieving Windows 10 environment variables or creating your favorite Linux GUI application shortcuts on Windows 10 Desktop. TO install it:
+This is a collection of utilities for Windows 10 Linux Subsystem, such as retrieving Windows 10 environment variables or creating your favorite Linux GUI application shortcuts on Windows 10 Desktop. To install it:
 ```zsh
 sudo apt install gnupg2 apt-transport-https && wget -O - https://pkg.wslutiliti.es/public.key | sudo tee -a /etc/apt/trusted.gpg.d/wslu.asc && echo "deb https://pkg.wslutiliti.es/debian buster main" | sudo tee -a /etc/apt/sources.list && sudo apt update && sudo apt install wslu 
 ```
