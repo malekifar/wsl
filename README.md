@@ -434,4 +434,9 @@ This tool allows you to run applications in windows elevated user mode from a no
 mkdir ~/.wudo && cd ~/.wudo && git clone https://github.com/Chronial/wsl-sudo.git && alias wudo="python3 ~/.wudo/wsl-sudo/wsl-sudo.py"
 ```
 ## Jupyter Notebook
-`echo "c.NotebookApp.use_redirect_file = False" >> ~/.jupyter/jupyter_notebook_config.py`
+```zsh
+sudo apt-get remove lynx links links2
+```
+```zsh
+echo "c.NotebookApp.use_redirect_file = False" >> ~/.jupyter/jupyter_notebook_config.py
+```
