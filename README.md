@@ -426,5 +426,7 @@ echo "plugins=(git docker zsh-completions)" >> ~/.zshrc
 sudo apt install gnupg2 apt-transport-https && wget -O - https://pkg.wslutiliti.es/public.key | sudo tee -a /etc/apt/trusted.gpg.d/wslu.asc && echo "deb https://pkg.wslutiliti.es/debian buster main" | sudo tee -a /etc/apt/sources.list && sudo apt update && sudo apt install wslu 
 ```
 ## WSL Sudo
-
+```zsh
+mkdir ~/.wudo && cd ~/.wudo && git clone https://github.com/Chronial/wsl-sudo.git && alias wudo="python3 ~/.wudo/wsl-sudo/wsl-sudo.py"
+```
 ## Jupyter Notebook
