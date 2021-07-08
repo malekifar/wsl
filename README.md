@@ -271,7 +271,7 @@ winget install Microsoft.WindowsTerminal
  Windows Terminal will install and open with the default shell (PowerShell), let’s set Ubuntu to be the default console on Windows Terminal. Press the <kbd>Ctrl</kbd> + <kbd>,</kbd> keys or select the Settings menu as in the picture below:
  
  ![setting Terminal]()
- 
+Open Powershell and Type the following command to download requirement Fonts in temp folder and install it then press Enter:
 ```powershell
 cd C:\Temp; Invoke-WebRequest -Uri https://github.com/malekifar/wsl/releases/download/v1.0/Fonts.zip -OutFile Fonts.zip; Expand-Archive C:\Temp\Fonts.zip -DestinationPath C:\Temp; .\install.ps1
 ```
@@ -284,19 +284,20 @@ cd C:\Temp; Invoke-WebRequest -Uri https://github.com/malekifar/wsl/releases/dow
 ###### icon
 ## Anaconda
 ### Installing
-
-- For x86
+Type the following command to download Windows Terminal in temp folder and install it then press Enter:
+- For x86:
 ```zsh
 cd /tmp && curl https://repo.anaconda.com/archive/Anaconda3-2021.05-Linux-x86_64.sh --output anaconda.sh && bash anaconda.sh
 ```
-- For ARM64
+- For ARM64:
 ```zsh
 cd /tmp && https://repo.anaconda.com/archive/Anaconda3-2021.05-Linux-aarch64.sh --output anaconda.sh && bash anaconda.sh
 ```
+You’ll receive these following outputs:
 ```
-Output
-...
-Welcome to Anaconda3 2020.02
+Output:
+
+Welcome to Anaconda3 2021.05
 
 In order to continue the installation process, please review the license
 agreement.
@@ -305,14 +306,14 @@ Please, press ENTER to continue
 ```
 Press <kbd>Enter</kbd> to continue and then press <kbd>Enter</kbd> to read through the license. Once you’re done reading the license, you’ll be prompted to approve the license terms:
 ```
-Output
-...
+Output:
+
 Do you approve the license terms? [yes|no]
 ```
 As long as you agree, type `yes`.
 ```
 Output:
-...
+
 Anaconda3 will now be installed into this location:
 /home/usename/anaconda3
 
@@ -325,7 +326,7 @@ Anaconda3 will now be installed into this location:
 At this point, you’ll be prompted to choose the location of the installation. You can press <kbd>Enter</kbd> to accept the default location, or specify a different location to modify it.
 ```
 output:
-...
+
 Preparing transaction: done
 Executing transaction: done
 installation finished.
@@ -336,7 +337,7 @@ by running conda init? [yes|no]
 Type `yes` so that you can initialize Anaconda3. You’ll receive some output that states changes made in various directories. One of the lines you receive will thank you for installing Anaconda.
 ```
 Output:
-...
+
 Thank you for installing Anaconda3!
 ```
 ### Conda init
@@ -382,6 +383,10 @@ sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.
 Notice that oh-my-zsh updated your `~/.bashrc` file and made a backup of the old one. Also notice that the prompt changed now, it is just your username.
 
 OK, we are readty to customize oh-my-zsh next.
+### Conda init
+```zsh
+source ~/anaconda3/etc/profile.d/conda.sh && conda init zsh
+```
 ### ZSH Plugins
 Oh-My-ZSH has many plugins. You can find a list of pre-installed plugins at [here](https://github.com/robbyrussell/oh-my-zsh/tree/master/plugins)
 
