@@ -295,7 +295,7 @@ cd /tmp && https://repo.anaconda.com/archive/Anaconda3-2021.05-Linux-aarch64.sh 
 ```
 ```
 Output
-
+...
 Welcome to Anaconda3 2020.02
 
 In order to continue the installation process, please review the license
@@ -306,12 +306,13 @@ Please, press ENTER to continue
 Press <kbd>Enter</kbd> to continue and then press <kbd>Enter</kbd> to read through the license. Once you’re done reading the license, you’ll be prompted to approve the license terms:
 ```
 Output
+...
 Do you approve the license terms? [yes|no]
 ```
 As long as you agree, type `yes`.
 ```
-Output
-
+Output:
+...
 Anaconda3 will now be installed into this location:
 /home/usename/anaconda3
 
@@ -323,7 +324,7 @@ Anaconda3 will now be installed into this location:
 ```
 At this point, you’ll be prompted to choose the location of the installation. You can press <kbd>Enter</kbd> to accept the default location, or specify a different location to modify it.
 ```
-Output
+output:
 ...
 Preparing transaction: done
 Executing transaction: done
@@ -334,8 +335,8 @@ by running conda init? [yes|no]
 ```
 Type `yes` so that you can initialize Anaconda3. You’ll receive some output that states changes made in various directories. One of the lines you receive will thank you for installing Anaconda.
 ```
-Output
-
+Output:
+...
 Thank you for installing Anaconda3!
 ```
 ### Conda init
