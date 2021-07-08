@@ -94,7 +94,7 @@ Once you complete the steps, the environment will be configured to download and 
 
 ![Store install](https://raw.githubusercontent.com/malekifar/wsl/main/screenshots/Store%20Ubuntu-20.04.jpg)
 ###### Method2 Using PowerShell
-1. Open Powershell and Type the following command to download Ubuntu in temp folder and install it then press Enter:
+Open Powershell and Type the following command to download Ubuntu in temp folder and install it then press Enter:
 - For x64:
 
 ```powershell
@@ -422,6 +422,9 @@ echo "plugins=(git docker zsh-completions)" >> ~/.zshrc
 
 ## PowerLevel10K
 ## WSLU
+```zsh
+sudo apt install gnupg2 apt-transport-https && wget -O - https://pkg.wslutiliti.es/public.key | sudo tee -a /etc/apt/trusted.gpg.d/wslu.asc && echo "deb https://pkg.wslutiliti.es/debian buster main" | sudo tee -a /etc/apt/sources.list && sudo apt update && sudo apt install wslu 
+```
 ## WSL Sudo
 
 ## Jupyter Notebook
