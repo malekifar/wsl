@@ -240,6 +240,7 @@ VSCode has many extensions. You can find a list of pre-installed extensions at [
 - [Material Theme by Equinusocio](https://marketplace.visualstudio.com/items?itemName=Equinusocio.vsc-material-theme)
 - [Noctis by Liviu Schera](https://marketplace.visualstudio.com/items?itemName=liviuschera.noctis)
 - [Solarized by Ryan Olson](https://marketplace.visualstudio.com/items?itemName=ryanolsonx.solarized)
+- [Remote - WSL by Microsoft](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-wsl)
 - [Auto Rename Tag by Jun Han](https://marketplace.visualstudio.com/items?itemName=formulahendry.auto-rename-tag)
 - [Auto Close Tag by Jun Han](https://marketplace.visualstudio.com/items?itemName=formulahendry.auto-close-tag)
 
@@ -321,28 +322,34 @@ Oh-My-ZSH has many plugins. You can find a list of pre-installed plugins at [her
 
 ###### fuzzy finder fzf
 ```zsh
-git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf && ~/.fzf/install
+git clone --depth 1 https://github.com/junegunn/fzf.git ~/.zsh/.fzf && ~/.zsh/.fzf/install
 ```
 ###### autojump
+```zsh
+git clone git://github.com/wting/autojump.git ~/.zsh/autojump && cd ~/.zsh/autojump && ./install.py && echo "source ~/.autojump/etc/profile.d/autojump.sh" >> ~/.zshrc
+```
 ###### zsh-autosuggestions
 ```zsh
-git clone https://github.com/zsh-users/zsh-autosuggestions ~/.zsh/zsh-autosuggestions && echo "source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh" >> ~/.zshrc
+git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:=~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions && echo "source ~/.oh-my-zsh/custom/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh" >> ~/.zshrc
+```
+###### enhancd
+```zsh
+git clone https://github.com/b4b4r07/enhancd ${ZSH_CUSTOM:=~/.oh-my-zsh/custom}/plugins/enhancd && echo "source ~/.oh-my-zsh/custom/plugins/enhancd/init.sh" >> ~/.zshrc
 ```
 ###### zsh-completions
 ```zsh
-git clone https://github.com/zsh-users/zsh-completions ${ZSH_CUSTOM:=~/.oh-my-zsh/custom}/plugins/zsh-completions
-```
-
-```zsh
-echo "plugins=(git docker zsh-completions)" >> ~/.zshrc
+git clone https://github.com/zsh-users/zsh-completions ${ZSH_CUSTOM:=~/.oh-my-zsh/custom}/plugins/zsh-completions && echo "source ~/.oh-my-zsh/custom/plugins/zsh-completions/zsh-completions.plugin.zsh" >> ~/.zshrc
 ```
 ###### fast Syntax Highlighting
 ```zsh
-git clone https://github.com/zdharma/fast-syntax-highlighting ~/path/to/fsh && echo "source ~/path/to/fsh/fast-syntax-highlighting.plugin.zsh" >> ~/.zshrc
+git clone https://github.com/zdharma/fast-syntax-highlighting ${ZSH_CUSTOM:=~/.oh-my-zsh/custom}/plugins/fast-syntax-highlighting && echo "source ~/.oh-my-zsh/custom/plugins/fast-syntax-highlighting/fast-syntax-highlighting.plugin.zsh" >> ~/.zshrc
 ```
-
 ###### colored-man-pages
+```zsh
+echo "plugins=(git docker zsh-completions)" >> ~/.zshrc
+```
 ###### 
+
 ## PowerLevel10K
 ## WSLU
 ## WSL Sudo
