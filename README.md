@@ -1,4 +1,4 @@
-# How to install Ubuntu 20.04 + WSL2 + VScode + Windows Terminal + ZSH + PowerLevel10K + WSLU + WSL Sudo + Anaconda + Jupyter Notebook
+# How to install Ubuntu 20.04 + WSL2 + VScode + Windows Terminal + Anaconda + Git + ZSH + WSLU + WSL Sudo
 ## Table of Contents
 - [WSL](#WSL)
   - [Requirements](#Requirements)
@@ -271,7 +271,7 @@ winget install Microsoft.WindowsTerminal
  Windows Terminal will install and open with the default shell (PowerShell), let’s set Ubuntu to be the default console on Windows Terminal. Press the <kbd>Ctrl</kbd> + <kbd>,</kbd> keys or select the Settings menu as in the picture below:
  
  ![setting Terminal]()
-Open Powershell and Type the following command to download requirement Fonts in temp folder and install it then press Enter:
+Open Powershell and Type the following command to download [requirement fonts](https://github.com/ryanoasis/nerd-fonts) in temp folder and install it then press Enter:
 ```powershell
 cd C:\Temp; Invoke-WebRequest -Uri https://github.com/malekifar/wsl/releases/download/v1.0/Fonts.zip -OutFile Fonts.zip; Expand-Archive C:\Temp\Fonts.zip -DestinationPath C:\Temp; .\install.ps1
 ```
@@ -282,7 +282,7 @@ cd C:\Temp; Invoke-WebRequest -Uri https://github.com/malekifar/wsl/releases/dow
 ###### fontFace
 
 ###### icon
-## Anaconda
+## [Anaconda](https://www.anaconda.com/)
 ### Installing
 Type the following command to download Windows Terminal in temp folder and install it then press Enter:
 - For x86:
@@ -344,13 +344,13 @@ Thank you for installing Anaconda3!
 ```zsh
 source ~/anaconda3/etc/profile.d/conda.sh && conda init bash && conda init zsh
 ```
-## Git
+## [Git](https://github.com/git/git)
 Install Git using apt-get:
 ```zsh
 sudo apt-get update && sudo apt-get install git
 ```
-## ZSH
-### Installing [ZSH](https://github.com/zsh-users/zsh)
+## [ZSH](https://github.com/zsh-users/zsh)
+### Installing
 Type the following commands to update apt and install zsh then press Enter:
 
 ```zsh
@@ -418,11 +418,19 @@ git clone https://github.com/zdharma/fast-syntax-highlighting ${ZSH_CUSTOM:=~/.o
 ```zsh
 sed -i 's/plugins=\(.*\)/plugins=\(git docker zsh-completions colored-man-pages fast-syntax-highlighting colorize dash command-not-found\)/g' ~/.zshrc
 ```
-###### 
-
-## [PowerLevel10K](https://github.com/romkatv/powerlevel10k)
+### ZSH Themes
+We are going to make our color pretty and prompt useful. There are a lot of themes in oh-my-zsh, you can see them [here](https://github.com/ohmyzsh/ohmyzsh/wiki/Themes):
+###### [PowerLevel10K](https://github.com/romkatv/powerlevel10k)(recommended)
 ```zsh
 sed -i 's/ZSH_THEME=".*"/ZSH_THEME="powerlevel10k\/powerlevel10k"/g' ~/.zshrc
+```
+###### Agnoster
+```zsh
+sed -i 's/ZSH_THEME=".*"/ZSH_THEME="agnoster"/g' ~/.zshrc
+```
+###### robbyrussell
+```zsh
+sed -i 's/ZSH_THEME=".*"/ZSH_THEME="robbyrussell"/g' ~/.zshrc
 ```
 ## [WSLU](https://github.com/wslutilities/wslu)
 This is a collection of utilities for Windows 10 Linux Subsystem, such as retrieving Windows 10 environment variables or creating your favorite Linux GUI application shortcuts on Windows 10 Desktop. To install it:
