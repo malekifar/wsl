@@ -414,9 +414,9 @@ git clone https://github.com/zsh-users/zsh-completions ${ZSH_CUSTOM:=~/.oh-my-zs
 ```zsh
 git clone https://github.com/zdharma/fast-syntax-highlighting ${ZSH_CUSTOM:=~/.oh-my-zsh/custom}/plugins/fast-syntax-highlighting && echo "source ~/.oh-my-zsh/custom/plugins/fast-syntax-highlighting/fast-syntax-highlighting.plugin.zsh" >> ~/.zshrc
 ```
-###### colored-man-pages
+###### git, docker, zsh-completions, colored-man-pages, fast-syntax-highlighting, colorize, dash & command-not-found
 ```zsh
-echo "plugins=(git docker zsh-completions)" >> ~/.zshrc
+sed -i 's/plugins=\(.*\)/plugins=\(git docker zsh-completions colored-man-pages fast-syntax-highlighting colorize dash command-not-found\)/g' ~/.zshrc
 ```
 ###### 
 
