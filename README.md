@@ -421,6 +421,9 @@ echo "plugins=(git docker zsh-completions)" >> ~/.zshrc
 ###### 
 
 ## PowerLevel10K
+```zsh
+sed -i 's/ZSH_THEME=".*"/ZSH_THEME="powerlevel10k\/powerlevel10k"/g' ~/.zshrc
+```
 ## WSLU
 This is a collection of utilities for Windows 10 Linux Subsystem, such as retrieving Windows 10 environment variables or creating your favorite Linux GUI application shortcuts on Windows 10 Desktop. To install it:
 ```zsh
