@@ -51,7 +51,7 @@
 - [Anaconda](#Anaconda)
 - [Jupyter Notebook](#Jupyter-Notebook)
 
-## WSL
+## [WSL](https://github.com/microsoft/WSL)
 ### Requirements
 - Windows 7, 8, 8.1 do not support WSL. 
 - Versions lower than 1803 of Windows 10 do not support WSL.
@@ -122,7 +122,7 @@ winget install Canonical.Ubuntu
 ```
 
 The first launch will do the actual installation and will take a few seconds. The setup will also ask you for a username and a password for your Ubuntu configuration.
-## WSL2
+## [WSL2](https://github.com/microsoft/WSL2-Linux-Kernel)
 ### Requirements
 - For x64 systems: Version 1903 or higher, with Build 18362 or higher.
 - For ARM64 systems: Version 2004 or higher, with Build 19041 or higher.
