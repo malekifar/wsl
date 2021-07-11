@@ -155,7 +155,7 @@ OK, now it is time to set WSL2 to be the default for all WSL installations. Trus
 `wsl --set-default-version 2; wsl --set-version Ubuntu-20.04 2; wsl -l -v`
 
 Now, You have Ubuntu-20.04 on version 2
-## VSCode  
+## [VSCode](https://github.com/microsoft/vscode)
 ### Requirements
 .NET Framework 4.5.2 or higher is required for VS Code. You can download latest version from [here](https://dotnet.microsoft.com/download/dotnet-framework)
 ### Installing
@@ -244,7 +244,7 @@ VSCode has many extensions. You can find a list of pre-installed extensions at [
 - [Auto Rename Tag by Jun Han](https://marketplace.visualstudio.com/items?itemName=formulahendry.auto-rename-tag)
 - [Auto Close Tag by Jun Han](https://marketplace.visualstudio.com/items?itemName=formulahendry.auto-close-tag)
 
-## Windows Terminal
+## [Windows Terminal](https://github.com/microsoft/terminal)
 ### Requirements
 Versions 1903 (build 18362) of Windows 10
 ### Installing
@@ -350,7 +350,7 @@ Install Git using apt-get:
 sudo apt-get update && sudo apt-get install git
 ```
 ## ZSH
-### Installing ZSH
+### Installing [ZSH](https://github.com/zsh-users/zsh)
 Type the following commands to update apt and install zsh then press Enter:
 
 ```zsh
@@ -373,7 +373,7 @@ you should get the following results:
 
 ![shell version]()
 
-### Installing oh-my-zsh
+### Installing [oh-my-zsh](https://github.com/ohmyzsh/ohmyzsh)
 Now we can install oh-my-zsh
 
 ```zsh
@@ -390,27 +390,27 @@ source ~/anaconda3/etc/profile.d/conda.sh && conda init zsh
 ### ZSH Plugins
 Oh-My-ZSH has many plugins. You can find a list of pre-installed plugins at [here](https://github.com/robbyrussell/oh-my-zsh/tree/master/plugins)
 
-###### fuzzy finder fzf
+###### [fuzzy finder fzf](https://github.com/junegunn/fzf)
 ```zsh
 git clone --depth 1 https://github.com/junegunn/fzf.git ~/.zsh/.fzf && ~/.zsh/.fzf/install
 ```
-###### autojump
+###### [autojump](https://github.com/wting/autojump)
 ```zsh
 git clone git://github.com/wting/autojump.git ~/.zsh/autojump && cd ~/.zsh/autojump && ./install.py && echo "source ~/.autojump/etc/profile.d/autojump.sh" >> ~/.zshrc
 ```
-###### zsh-autosuggestions
+###### [zsh-autosuggestions](https://github.com/zsh-users/zsh-autosuggestions)
 ```zsh
 git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:=~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions && echo "source ~/.oh-my-zsh/custom/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh" >> ~/.zshrc
 ```
-###### enhancd
+###### [enhancd](https://github.com/b4b4r07/enhancd)
 ```zsh
 git clone https://github.com/b4b4r07/enhancd ${ZSH_CUSTOM:=~/.oh-my-zsh/custom}/plugins/enhancd && echo "source ~/.oh-my-zsh/custom/plugins/enhancd/init.sh" >> ~/.zshrc
 ```
-###### zsh-completions
+###### [zsh-completions](https://github.com/zsh-users/zsh-completions)
 ```zsh
 git clone https://github.com/zsh-users/zsh-completions ${ZSH_CUSTOM:=~/.oh-my-zsh/custom}/plugins/zsh-completions && echo "source ~/.oh-my-zsh/custom/plugins/zsh-completions/zsh-completions.plugin.zsh" >> ~/.zshrc
 ```
-###### fast Syntax Highlighting
+###### [fast Syntax Highlighting](https://github.com/zdharma/fast-syntax-highlighting)
 ```zsh
 git clone https://github.com/zdharma/fast-syntax-highlighting ${ZSH_CUSTOM:=~/.oh-my-zsh/custom}/plugins/fast-syntax-highlighting && echo "source ~/.oh-my-zsh/custom/plugins/fast-syntax-highlighting/fast-syntax-highlighting.plugin.zsh" >> ~/.zshrc
 ```
@@ -420,11 +420,11 @@ sed -i 's/plugins=\(.*\)/plugins=\(git docker zsh-completions colored-man-pages 
 ```
 ###### 
 
-## PowerLevel10K
+## [PowerLevel10K](https://github.com/romkatv/powerlevel10k)
 ```zsh
 sed -i 's/ZSH_THEME=".*"/ZSH_THEME="powerlevel10k\/powerlevel10k"/g' ~/.zshrc
 ```
-## WSLU
+## [WSLU](https://github.com/wslutilities/wslu)
 This is a collection of utilities for Windows 10 Linux Subsystem, such as retrieving Windows 10 environment variables or creating your favorite Linux GUI application shortcuts on Windows 10 Desktop. To install it:
 ```zsh
 sudo apt install gnupg2 apt-transport-https && wget -O - https://pkg.wslutiliti.es/public.key | sudo tee -a /etc/apt/trusted.gpg.d/wslu.asc && echo "deb https://pkg.wslutiliti.es/debian buster main" | sudo tee -a /etc/apt/sources.list && sudo apt update && sudo apt install wslu && sudo apt-get remove lynx links links2
@@ -445,7 +445,7 @@ For Edge:
 ```zsh
 wslview -r $(wslpath -au 'C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe')
 ```
-## WSL Sudo
+## [WSL Sudo](https://github.com/Chronial/wsl-sudo)
 This tool allows you to run applications in windows elevated user mode from a non-elevated wsl shell. To install it:
 ```zsh
 mkdir ~/.wudo && cd ~/.wudo && git clone https://github.com/Chronial/wsl-sudo.git && alias wudo="python3 ~/.wudo/wsl-sudo/wsl-sudo.py"
