@@ -429,8 +429,22 @@ This is a collection of utilities for Windows 10 Linux Subsystem, such as retrie
 ```zsh
 sudo apt install gnupg2 apt-transport-https && wget -O - https://pkg.wslutiliti.es/public.key | sudo tee -a /etc/apt/trusted.gpg.d/wslu.asc && echo "deb https://pkg.wslutiliti.es/debian buster main" | sudo tee -a /etc/apt/sources.list && sudo apt update && sudo apt install wslu && sudo apt-get remove lynx links links2
 ```
-
-`wslview -r $(wslpath -au 'C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe')`
+For changing your default browser:
+```zsh
+wslview -r $(wslpath -au 'exe file of browser')
+```
+For Chrome:
+```zsh
+wslview -r $(wslpath -au 'C:\Program Files (x86)\Google\Chrome\Application\chrome.exe')
+```
+For Firefox:
+```zsh
+wslview -r $(wslpath -au 'C:\Program Files\Mozilla Firefox\firefox.exe')
+```
+For Edge:
+```zsh
+wslview -r $(wslpath -au 'C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe')
+```
 ## WSL Sudo
 This tool allows you to run applications in windows elevated user mode from a non-elevated wsl shell. To install it:
 ```zsh
