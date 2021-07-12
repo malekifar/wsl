@@ -370,7 +370,7 @@ echo $SHELL && $SHELL --version
 
 you should get the following results:
 
-![shell version]()
+![shell version](https://raw.githubusercontent.com/malekifar/wsl/main/screenshots/shell%20version.jpg)
 
 ### Installing [oh-my-zsh](https://github.com/ohmyzsh/ohmyzsh)
 Now we can install oh-my-zsh
