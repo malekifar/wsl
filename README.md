@@ -32,12 +32,12 @@
     - [Method1 Using Microsoft Store](#method1-using-microsoft-store-1)
     - [Method2 Using PowerShell](#method2-using-powershell-3)
     - [Method3 Using Windows Package Manager](#method3-using-windows-package-manager-1)
-  - Adding Ubuntu Tab to Windows Terminal =>coming soon
+  - Adding Ubuntu Tab to Windows Terminal => coming soon
   - [Configuring](#configuring-1)
     - [fontFace](#fontface)
-    - [colorScheme](#colorscheme)
-    - [icon](#icon)
-  - [Changing Default Console](#changing-default-console)
+    - [colorScheme](#colorscheme) => coming soon
+    - [icon](#icon) => coming soon
+  - [Changing Default Console](#changing-default-console)=> coming soon
 - [Anaconda](#anaconda)
   - [Installing](#installing-2)
   - [Conda init](#conda-init)
