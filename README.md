@@ -110,12 +110,12 @@ Open Powershell and Type the following command to download Ubuntu in temp folder
 - For x64:
 
 ```powershell
-cd C:\Temp; Invoke-WebRequest -Uri https://aka.ms/wslubuntu2004 -OutFile Ubuntu.appx -UseBasicParsing; Add-AppxPackage .\Ubuntu.appx
+cd C:\windows\Temp; Invoke-WebRequest -Uri https://aka.ms/wslubuntu2004 -OutFile Ubuntu.appx -UseBasicParsing; Add-AppxPackage .\Ubuntu.appx
 ```
 - For ARM64: 
 
 ```powershell
-cd C:\Temp; Invoke-WebRequest -Uri https://aka.ms/wslubuntu2004arm -OutFile Ubuntu.appx -UseBasicParsing; Add-AppxPackage .\Ubuntu.appx
+cd C:\windows\Temp; Invoke-WebRequest -Uri https://aka.ms/wslubuntu2004arm -OutFile Ubuntu.appx -UseBasicParsing; Add-AppxPackage .\Ubuntu.appx
 ```
 
 ###### Method3 Using Windows Package Manager
@@ -124,7 +124,7 @@ To use Windows Package Manager, you should install it first:
 Open Powershell and Type the following command to download Windows Package Manager in temp folder and install it then press Enter:
 
 ```powershell
-cd C:\Temp; Invoke-WebRequest -Uri https://github.com/microsoft/winget-cli/releases/download/v1.0.11692/Microsoft.DesktopAppInstaller_8wekyb3d8bbwe.msixbundle -OutFile WPM.msixbundle -UseBasicParsing; Add-AppxPackage .\WPM.msixbundle
+cd C:\windows\Temp; Invoke-WebRequest -Uri https://github.com/microsoft/winget-cli/releases/download/v1.0.11692/Microsoft.DesktopAppInstaller_8wekyb3d8bbwe.msixbundle -OutFile WPM.msixbundle -UseBasicParsing; Add-AppxPackage .\WPM.msixbundle
 ```
 
 Open Powershell or Command Prompt and Type the following command to install Ubuntu 20.04
@@ -270,7 +270,7 @@ Versions 1903 (build 18362) of Windows 10
 1. Open Powershell and Type the following command to download Windows Terminal in temp folder and install it then press Enter:
 
 ```powershell
-cd C:\Temp; Invoke-WebRequest -Uri https://github.com/microsoft/terminal/releases/download/v1.8.1444.0/Microsoft.WindowsTerminal_1.8.1444.0_8wekyb3d8bbwe.msixbundle -OutFile Terminal.msixbundle -UseBasicParsing; Add-AppxPackage .\Terminal.msixbundle
+cd C:\windows\Temp; Invoke-WebRequest -Uri https://github.com/microsoft/terminal/releases/download/v1.8.1444.0/Microsoft.WindowsTerminal_1.8.1444.0_8wekyb3d8bbwe.msixbundle -OutFile Terminal.msixbundle -UseBasicParsing; Add-AppxPackage .\Terminal.msixbundle
 ```
 
 ###### Method3 Using Windows Package Manager
@@ -287,7 +287,7 @@ winget install Microsoft.WindowsTerminal
 ###### fontFace
 Open Powershell and Type the following command to download [requirement fonts](https://github.com/ryanoasis/nerd-fonts) in temp folder and install it then press Enter:
 ```powershell
-cd C:\Temp; Invoke-WebRequest -Uri https://github.com/malekifar/wsl/releases/download/v1.0/Fonts.zip -OutFile Fonts.zip; Expand-Archive C:\Temp\Fonts.zip -DestinationPath C:\Temp; .\install.ps1
+cd C:\windows\Temp; Invoke-WebRequest -Uri https://github.com/malekifar/wsl/releases/download/v1.0/Fonts.zip -OutFile Fonts.zip; Expand-Archive C:\windows\Temp\Fonts.zip -DestinationPath C:\windows\Temp; .\install.ps1
 ```
 ###### colorScheme
 ###### icon
