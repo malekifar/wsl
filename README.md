@@ -61,8 +61,6 @@
 - [WSLU](#Installing-WSLU)
 - [WSL Sudo](#Installing-WSL-Sudo)
 
-- [Jupyter Notebook](#Jupyter-Notebook)
-
 ## [WSL](https://github.com/microsoft/WSL)
 ### Requirements
 - Windows 7, 8, 8.1 do not support WSL. 
