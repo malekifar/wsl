@@ -270,18 +270,17 @@ winget install Microsoft.WindowsTerminal
 ### Configuring
  Windows Terminal will install and open with the default shell (PowerShell), let’s set Ubuntu to be the default console on Windows Terminal. Press the <kbd>Ctrl</kbd> + <kbd>,</kbd> keys or select the Settings menu as in the picture below:
  
- ![setting Terminal]()
+ ![setting Terminal](https://raw.githubusercontent.com/malekifar/wsl/main/screenshots/terminal-setting.jpg)
+ 
+###### fontFace
 Open Powershell and Type the following command to download [requirement fonts](https://github.com/ryanoasis/nerd-fonts) in temp folder and install it then press Enter:
 ```powershell
 cd C:\Temp; Invoke-WebRequest -Uri https://github.com/malekifar/wsl/releases/download/v1.0/Fonts.zip -OutFile Fonts.zip; Expand-Archive C:\Temp\Fonts.zip -DestinationPath C:\Temp; .\install.ps1
 ```
-###### Changing Default Console
-
 ###### colorScheme
-
-###### fontFace
-
 ###### icon
+![setting_complete](https://raw.githubusercontent.com/malekifar/wsl/main/screenshots/setting_complete.png)
+###### Changing Default Console
 ## [Anaconda](https://www.anaconda.com/)
 ### Installing
 Type the following command to download Windows Terminal in temp folder and install it then press Enter:
@@ -424,14 +423,17 @@ We are going to make our color pretty and prompt useful. There are a lot of them
 ```zsh
 sed -i 's/ZSH_THEME=".*"/ZSH_THEME="powerlevel10k\/powerlevel10k"/g' ~/.zshrc
 ```
+![powerlevel10k](https://raw.githubusercontent.com/malekifar/wsl/main/screenshots/powerlevel10k.jpg)
 ###### Agnoster
 ```zsh
 sed -i 's/ZSH_THEME=".*"/ZSH_THEME="agnoster"/g' ~/.zshrc
 ```
+![Agnoster]()
 ###### robbyrussell
 ```zsh
 sed -i 's/ZSH_THEME=".*"/ZSH_THEME="robbyrussell"/g' ~/.zshrc
 ```
+![robbyrussell](https://raw.githubusercontent.com/malekifar/wsl/main/screenshots/robbyrussell.jpg)
 ## [WSLU](https://github.com/wslutilities/wslu)
 This is a collection of utilities for Windows 10 Linux Subsystem, such as retrieving Windows 10 environment variables or creating your favorite Linux GUI application shortcuts on Windows 10 Desktop. To install it:
 ```zsh
