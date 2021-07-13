@@ -295,7 +295,7 @@ cd C:\windows\Temp; Invoke-WebRequest -Uri https://github.com/malekifar/wsl/rele
 ###### Changing Default Console
 ## [Anaconda](https://www.anaconda.com/)
 ### Installing
-Type the following command to download Windows Terminal in temp folder and install it then press Enter:
+Type the following command to download Anaconda in temp folder and install it then press Enter:
 - For x86:
 ```zsh
 cd /tmp && curl https://repo.anaconda.com/archive/Anaconda3-2021.05-Linux-x86_64.sh --output anaconda.sh && bash anaconda.sh
