@@ -11,7 +11,7 @@
     - [Method1 Using Microsoft Store](#method1-using-microsoft-store)
     - [Method2 Using PowerShell](#Method2-using-powershell-1)
     - [Method3 Using Windows Package Manager](#method3-using-windows-package-manager)
-      - [Installing Windows Package Manager](#)
+      - [Installing Windows Package Manager](#Installing_Windows_Package_Manager)
 - [WSL2](#WSL2)
   - [Requirements](#Requirements-1)
   - [Enabling Windows Subsystem for Linux](#Enabling-Windows-Subsystem-for-Linux)
@@ -60,7 +60,7 @@
     - [robbyrussell](#robbyrussell)
 - [WSLU](#Installing-WSLU)
 - [WSL Sudo](#Installing-WSL-Sudo)
-
+- VIM => coming soon
 ## [WSL](https://github.com/microsoft/WSL)
 ### Requirements
 - Windows 7, 8, 8.1 do not support WSL. 
@@ -120,7 +120,7 @@ cd C:\windows\Temp; Invoke-WebRequest -Uri https://aka.ms/wslubuntu2004arm -OutF
 To use Windows Package Manager, you should install it first:
 
 Open Powershell and Type the following command to download Windows Package Manager in temp folder and install it then press Enter:
-
+###### Installing Windows Package Manager
 ```powershell
 cd C:\windows\Temp; Invoke-WebRequest -Uri https://github.com/microsoft/winget-cli/releases/download/v1.0.11692/Microsoft.DesktopAppInstaller_8wekyb3d8bbwe.msixbundle -OutFile WPM.msixbundle -UseBasicParsing; Add-AppxPackage .\WPM.msixbundle
 ```
