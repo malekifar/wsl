@@ -11,7 +11,7 @@
     - [Method1 Using Microsoft Store](#method1-using-microsoft-store)
     - [Method2 Using PowerShell](#Method2-using-powershell-1)
     - [Method3 Using Windows Package Manager](#method3-using-windows-package-manager)
-      - [Installing Windows Package Manager](#Installing_Windows_Package_Manager)
+      - [Installing Windows Package Manager](#installing-windows-package-manager)
 - [WSL2](#WSL2)
   - [Requirements](#Requirements-1)
   - [Enabling Windows Subsystem for Linux](#Enabling-Windows-Subsystem-for-Linux)
@@ -173,7 +173,8 @@ Now, You have Ubuntu-20.04 on version 2
 Go to [here](https://code.visualstudio.com/download) and download the latest installer for your Windows and follow the installation wizard to set up VS Code.
 
 ###### Method2 Using Windows Package Manager
-Open Powershell or Command Prompt and Type the following command to install Visual Studio Code
+To use Windows Package Manager, you should [install it](#installing-windows-package-manager) first.
+Then open Powershell or Command Prompt and Type the following command to install Visual Studio Code
 
 ```powershell
 winget install Microsoft.VisualStudioCode
@@ -272,7 +273,8 @@ cd C:\windows\Temp; Invoke-WebRequest -Uri https://github.com/microsoft/terminal
 ```
 
 ###### Method3 Using Windows Package Manager
-Open Powershell or Command Prompt and Type the following command to install Windows Terminal
+To use Windows Package Manager, you should [install it](#installing-windows-package-manager) first.
+Then open Powershell or Command Prompt and Type the following command to install Windows Terminal
 
 ```powershell
 winget install Microsoft.WindowsTerminal
