@@ -281,15 +281,18 @@ Then open Powershell or Command Prompt and Type the following command to install
 winget install Microsoft.WindowsTerminal
 ```
 ### Configuring
- Windows Terminal will install and open with the default shell (PowerShell), let’s set Ubuntu to be the default console on Windows Terminal. Press the <kbd>Ctrl</kbd> + <kbd>,</kbd> keys or select the Settings menu as in the picture below:
- 
- ![setting Terminal](https://raw.githubusercontent.com/malekifar/wsl/main/screenshots/terminal-setting.jpg)
 ###### Adding fontFace
 Open Powershell and Type the following command to download [requirement fonts](https://github.com/ryanoasis/nerd-fonts) in temp folder and install it then press Enter:
 ```powershell
 cd C:\windows\Temp; Invoke-WebRequest -Uri https://github.com/malekifar/wsl/releases/download/v1.0/Fonts.zip -OutFile Fonts.zip; Expand-Archive C:\windows\Temp\Fonts.zip -DestinationPath C:\windows\Temp; .\install.ps1
 ```
+ Windows Terminal will install and open with the default shell (PowerShell), color scheme, fontface and icon and command line let’s cuStomize it. Press the <kbd>Ctrl</kbd> + <kbd>,</kbd> keys or select the Settings menu as in the picture below:
+ 
+ ![setting Terminal](https://raw.githubusercontent.com/malekifar/wsl/main/screenshots/terminal-setting.jpg)
+
 ###### Adding more colorSchemes
+Windows Terminal lets you define your own color schemes, either by using the built-in preset schemes, or by creating your own scheme from scratch.
+
 ### Changing Default Console, colorschemes, fontface, icon and command line
 ###### Method1 Using Setting
 ![setting_complete](https://raw.githubusercontent.com/malekifar/wsl/main/screenshots/setting_complete.png)
