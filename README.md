@@ -34,10 +34,11 @@
     - [Method3 Using Windows Package Manager](#method3-using-windows-package-manager-1)
   - Adding Ubuntu Tab to Windows Terminal => coming soon
   - [Configuring](#configuring-1)
-    - [fontFace](#fontface)
-    - [colorScheme](#colorscheme) => coming soon
-    - [icon](#icon) => coming soon
-  - [Changing Default Console](#changing-default-console)=> coming soon
+    - [Adding fontFace](#fontface)
+    - [Adding more colorSchemes](#colorscheme)
+  - [Changing Default Console, colorschemes, fontface, icon and command line](#)  => coming soon
+    - [Method1 Using Setting] 
+    - [Method1 Using JSON File]
 - [Anaconda](#anaconda)
   - [Installing](#installing-2)
   - [Conda init](#conda-init)
@@ -283,16 +284,17 @@ winget install Microsoft.WindowsTerminal
  Windows Terminal will install and open with the default shell (PowerShell), let’s set Ubuntu to be the default console on Windows Terminal. Press the <kbd>Ctrl</kbd> + <kbd>,</kbd> keys or select the Settings menu as in the picture below:
  
  ![setting Terminal](https://raw.githubusercontent.com/malekifar/wsl/main/screenshots/terminal-setting.jpg)
- 
-###### fontFace
+###### Adding fontFace
 Open Powershell and Type the following command to download [requirement fonts](https://github.com/ryanoasis/nerd-fonts) in temp folder and install it then press Enter:
 ```powershell
 cd C:\windows\Temp; Invoke-WebRequest -Uri https://github.com/malekifar/wsl/releases/download/v1.0/Fonts.zip -OutFile Fonts.zip; Expand-Archive C:\windows\Temp\Fonts.zip -DestinationPath C:\windows\Temp; .\install.ps1
 ```
-###### colorScheme
-###### icon
+###### Adding more colorSchemes
+### Changing Default Console, colorschemes, fontface, icon and command line
+###### Method1 Using Setting
 ![setting_complete](https://raw.githubusercontent.com/malekifar/wsl/main/screenshots/setting_complete.png)
-###### Changing Default Console
+###### Method1 Using JSON File
+
 ## [Anaconda](https://www.anaconda.com/)
 ### Installing
 Type the following command to download Anaconda in tmp folder and install it then press Enter:
