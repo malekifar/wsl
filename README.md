@@ -453,7 +453,7 @@ sed -i 's/ZSH_THEME=".*"/ZSH_THEME="powerlevel10k\/powerlevel10k"/g' ~/.zshrc
 sed -i 's/ZSH_THEME=".*"/ZSH_THEME="agnoster"/g' ~/.zshrc
 ```
 - Hiding computer name
-```
+```zsh
 echo "export DEFAULT_USER=$(whoami)" >> ~/.zshrc
 ```
 ![Agnoster](https://raw.githubusercontent.com/malekifar/wsl/main/screenshots/agnoster.jpg)
