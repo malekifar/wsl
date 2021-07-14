@@ -284,7 +284,7 @@ winget install Microsoft.WindowsTerminal
 ###### Adding fontFace
 Open Powershell and Type the following command to download [requirement fonts](https://github.com/ryanoasis/nerd-fonts) in temp folder and install it then press Enter:
 ```powershell
-cd C:\windows\Temp; Invoke-WebRequest -Uri https://github.com/malekifar/wsl/releases/download/v1.0/Fonts.zip -OutFile Fonts.zip; Expand-Archive C:\windows\Temp\Fonts.zip -DestinationPath C:\windows\Temp; .\install.ps1
+Set-ExecutionPolicy -Scope CurrentUser -ExecutionPolicy Unrestricted; cd C:\windows\Temp; Invoke-WebRequest -Uri https://github.com/malekifar/wsl/releases/download/v1.0/Fonts.zip -OutFile Fonts.zip; Expand-Archive C:\windows\Temp\Fonts.zip -DestinationPath C:\windows\Temp; .\install.ps1
 ```
  Windows Terminal will install and open with the default shell (PowerShell), color scheme, fontface and icon and command line let’s cuStomize it. Press the <kbd>Ctrl</kbd> + <kbd>,</kbd> keys or select the Settings menu as in the picture below:
  
