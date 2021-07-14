@@ -10,47 +10,58 @@
   - [Installing Ubuntu 20.04](#installing-ubuntu-2004)
     - [Method1 Using Microsoft Store](#method1-using-microsoft-store)
     - [Method2 Using PowerShell](#Method2-using-powershell-1)
-    - [Method3 Using Windows Package Manager](#)
-      - [Installing Windows Package Manager](#)
+    - [Method3 Using Windows Package Manager](#method3-using-windows-package-manager)
+      - [Installing Windows Package Manager](#installing-windows-package-manager)
 - [WSL2](#WSL2)
   - [Requirements](#Requirements-1)
   - [Enabling Windows Subsystem for Linux](#Enabling-Windows-Subsystem-for-Linux)
     - [Method1 Using Settings](#Method1-Using-Settings)
-    - [Method2 Using PowerShell](#Method2-Using-PowerShell)
-  - [Updating WSL](#)
+    - [Method2 Using PowerShell](#method2-using-powershell-2)
+  - [Updating WSL](#updating-wsl)
 - [VSCode](#VSCode)
-  - [Requirements](#Requirements)
-  - [Installing](#)
-    - [Method1 Using Setup File](#)
-    - [Method2 Using Windows Package Manager](#)
-  - [Configuring](#)
-  - [Best Extensions](#)
+  - [Requirements](#requirements-2)
+  - [Installing](#installing)
+    - [Method1 Using Setup File](#method1-using-setup-files)
+    - [Method2 Using Windows Package Manager](#method2-using-windows-package-manager)
+  - [Configuring](#configuring)
+  - [Extensions](#extensions)
+    - [Best Extensions](#best-extensions)
 - [Windows Terminal](#Windows-Terminal)
-  - [Requirements](#Requirements)
-  - [Installing](#)
-    - [Method1 Using Microsoft Store](#method1-using-microsoft-store)
-    - [Method2 Using PowerShell](#Method2-using-powershell-1)
-    - [Method3 Using Windows Package Manager](#)
-  - [Adding Ubuntu Tab to Windows Terminal](#)
-  - [Configuring](#)
-    - [commandline](#)
-    - [colorScheme](#)
-    - [fontFace](#)
-    - [icon](#)
-  - [Changing Default Console](#)
+  - [Requirements](#requirements-3)
+  - [Installing](#installing-1)
+    - [Method1 Using Microsoft Store](#method1-using-microsoft-store-1)
+    - [Method2 Using PowerShell](#method2-using-powershell-3)
+    - [Method3 Using Windows Package Manager](#method3-using-windows-package-manager-1)
+  - Adding Ubuntu Tab to Windows Terminal => coming soon
+  - [Configuring](#configuring-1)
+    - [Adding fontFace](#fontface)
+    - [Adding more colorSchemes](#colorscheme)
+  - [Changing Default Console, colorschemes, fontface, icon and command line](#)  => coming soon
+    - [Method1 Using Setting] 
+    - [Method1 Using JSON File]
+- [Anaconda](#anaconda)
+  - [Installing](#installing-2)
+  - [Conda init](#conda-init)
+- [Git](#git)
 - [ZSH](#ZSH)
-  - [Installing](#)
-  - [Configuring](#)
-    - [fuzzy finder fzf](#)
-    - [git docker](#)
-    - [zsh-completions](#)
-    - [Syntax Highlighting](#)
-- [PowerLevel10K](#Installing-PowerLevel10K)
+  - [Installing](#installing-3)
+  - [Installing oh-my-zsh](#installing-oh-my-zsh)
+  - [Conda init](#onda-init-1)
+  - [ZSH Plugins](#zsh-plugins)
+    - [fuzzy finder fzf](#fuzzy-finder-fzf)
+    - [autojump](#autojump)
+    - [zsh-autosuggestions](#zsh-autosuggestions)
+    - [enhancd](#enhancd)
+    - [zsh-completions](#zsh-completions)
+    - [fast Syntax Highlighting](#fast-syntax-highlighting)
+    - [git, docker, colored-man-pages, colorize, dash & command-not-found](#git-docker-colored-man-pages-colorize-dash--command-not-found)
+  - [ZSH Themes](#zsh-themes)
+    - [PowerLevel10K](#Installing-PowerLevel10K)
+    - [Agnoster](#agnoster)
+    - [robbyrussell](#robbyrussell)
 - [WSLU](#Installing-WSLU)
 - [WSL Sudo](#Installing-WSL-Sudo)
-- [Anaconda](#Anaconda)
-- [Jupyter Notebook](#Jupyter-Notebook)
-
+- VIM => coming soon
 ## [WSL](https://github.com/microsoft/WSL)
 ### Requirements
 - Windows 7, 8, 8.1 do not support WSL. 
@@ -77,7 +88,7 @@ Press the <kbd>⊞ Win</kbd> + <kbd>R</kbd> keys and run `optionalfeatures` , yo
 
 Check the `Windows Subsystem for Linux` option and click the OK button.Then click the Restart now button.
 ###### Method2 Using PowerShell
-Open PowerShell as an Administrator (Press <kbd>⊞ Win</kbd> + <kbd>X</kbd> keys then select `Windows PowerShell (Admin)` and run the following script:
+Open PowerShell as an Administrator (Press <kbd>⊞ Win</kbd> + <kbd>X</kbd> keys then select `Windows PowerShell (Admin)`) and run the following script:
 
 ```powershell
 dism.exe /online /enable-feature /featurename:Microsoft-Windows-Subsystem-Linux /all /norestart
@@ -98,21 +109,21 @@ Open Powershell and Type the following command to download Ubuntu in temp folder
 - For x64:
 
 ```powershell
-cd C:\Temp; Invoke-WebRequest -Uri https://aka.ms/wslubuntu2004 -OutFile Ubuntu.appx -UseBasicParsing; Add-AppxPackage .\Ubuntu.appx
+cd C:\windows\Temp; Invoke-WebRequest -Uri https://aka.ms/wslubuntu2004 -OutFile Ubuntu.appx -UseBasicParsing; Add-AppxPackage .\Ubuntu.appx
 ```
 - For ARM64: 
 
 ```powershell
-cd C:\Temp; Invoke-WebRequest -Uri https://aka.ms/wslubuntu2004arm -OutFile Ubuntu.appx -UseBasicParsing; Add-AppxPackage .\Ubuntu.appx
+cd C:\windows\Temp; Invoke-WebRequest -Uri https://aka.ms/wslubuntu2004arm -OutFile Ubuntu.appx -UseBasicParsing; Add-AppxPackage .\Ubuntu.appx
 ```
 
 ###### Method3 Using Windows Package Manager
 To use Windows Package Manager, you should install it first:
 
 Open Powershell and Type the following command to download Windows Package Manager in temp folder and install it then press Enter:
-
+###### Installing Windows Package Manager
 ```powershell
-cd C:\Temp; Invoke-WebRequest -Uri https://github.com/microsoft/winget-cli/releases/download/v1.0.11692/Microsoft.DesktopAppInstaller_8wekyb3d8bbwe.msixbundle -OutFile WPM.msixbundle -UseBasicParsing; Add-AppxPackage .\WPM.msixbundle
+cd C:\windows\Temp; Invoke-WebRequest -Uri https://github.com/microsoft/winget-cli/releases/download/v1.0.11692/Microsoft.DesktopAppInstaller_8wekyb3d8bbwe.msixbundle -OutFile WPM.msixbundle -UseBasicParsing; Add-AppxPackage .\WPM.msixbundle
 ```
 
 Open Powershell or Command Prompt and Type the following command to install Ubuntu 20.04
@@ -136,7 +147,7 @@ Press the <kbd>⊞ Win</kbd> + <kbd>R</kbd> keys and run `optionalfeatures` , yo
 
 Check the `Virtual Machine Platform` option and click the OK button.Then click the Restart now button.
 ###### Method2 Using PowerShell
-Open PowerShell as an Administrator (Press <kbd>⊞ Win</kbd> + <kbd>X</kbd> keys then select `Windows PowerShell (Admin)` and run the following script:
+Open PowerShell as an Administrator (Press <kbd>⊞ Win</kbd> + <kbd>X</kbd> keys then select `Windows PowerShell (Admin)`) and run the following script:
 
 ```powershell
 dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /norestart
@@ -151,9 +162,9 @@ Once your PC has rebooted, we need to update the WSL 2 Linux kernel.Follow the d
 ![Installation MSI](https://raw.githubusercontent.com/malekifar/wsl/main/screenshots/Installation%20WSL2.png)
 
 OK, now it is time to set WSL2 to be the default for all WSL installations. Trust me, you don’t need to use WSL version 1 ever again. Open PowerShell and run:
-
-`wsl --set-default-version 2; wsl --set-version Ubuntu-20.04 2; wsl -l -v`
-
+```powershell
+wsl --set-default-version 2; wsl --set-version Ubuntu-20.04 2; wsl -l -v
+```
 Now, You have Ubuntu-20.04 on version 2
 ## [VSCode](https://github.com/microsoft/vscode)
 ### Requirements
@@ -163,7 +174,8 @@ Now, You have Ubuntu-20.04 on version 2
 Go to [here](https://code.visualstudio.com/download) and download the latest installer for your Windows and follow the installation wizard to set up VS Code.
 
 ###### Method2 Using Windows Package Manager
-Open Powershell or Command Prompt and Type the following command to install Visual Studio Code
+To use Windows Package Manager, you should [install it](#installing-windows-package-manager) first.
+Then open Powershell or Command Prompt and Type the following command to install Visual Studio Code
 
 ```powershell
 winget install Microsoft.VisualStudioCode
@@ -258,32 +270,38 @@ Versions 1903 (build 18362) of Windows 10
 1. Open Powershell and Type the following command to download Windows Terminal in temp folder and install it then press Enter:
 
 ```powershell
-cd C:\Temp; Invoke-WebRequest -Uri https://github.com/microsoft/terminal/releases/download/v1.8.1444.0/Microsoft.WindowsTerminal_1.8.1444.0_8wekyb3d8bbwe.msixbundle -OutFile Terminal.msixbundle -UseBasicParsing; Add-AppxPackage .\Terminal.msixbundle
+cd C:\windows\Temp; Invoke-WebRequest -Uri https://github.com/microsoft/terminal/releases/download/v1.8.1444.0/Microsoft.WindowsTerminal_1.8.1444.0_8wekyb3d8bbwe.msixbundle -OutFile Terminal.msixbundle -UseBasicParsing; Add-AppxPackage .\Terminal.msixbundle
 ```
 
+type `A` to changing the execution policy and installing fonts.
 ###### Method3 Using Windows Package Manager
-Open Powershell or Command Prompt and Type the following command to install Windows Terminal
+To use Windows Package Manager, you should [install it](#installing-windows-package-manager) first.
+Then open Powershell or Command Prompt and Type the following command to install Windows Terminal
 
 ```powershell
 winget install Microsoft.WindowsTerminal
 ```
 ### Configuring
- Windows Terminal will install and open with the default shell (PowerShell), let’s set Ubuntu to be the default console on Windows Terminal. Press the <kbd>Ctrl</kbd> + <kbd>,</kbd> keys or select the Settings menu as in the picture below:
- 
- ![setting Terminal](https://raw.githubusercontent.com/malekifar/wsl/main/screenshots/terminal-setting.jpg)
- 
-###### fontFace
+###### Adding fontFace
 Open Powershell and Type the following command to download [requirement fonts](https://github.com/ryanoasis/nerd-fonts) in temp folder and install it then press Enter:
 ```powershell
-cd C:\Temp; Invoke-WebRequest -Uri https://github.com/malekifar/wsl/releases/download/v1.0/Fonts.zip -OutFile Fonts.zip; Expand-Archive C:\Temp\Fonts.zip -DestinationPath C:\Temp; .\install.ps1
+Set-ExecutionPolicy -Scope CurrentUser -ExecutionPolicy Unrestricted; cd C:\windows\Temp; Invoke-WebRequest -Uri https://github.com/malekifar/wsl/releases/download/v1.0/Fonts.zip -OutFile Fonts.zip; Expand-Archive C:\windows\Temp\Fonts.zip -DestinationPath C:\windows\Temp; .\install.ps1
 ```
-###### colorScheme
-###### icon
+ Windows Terminal will install and open with the default shell (PowerShell), color scheme, fontface and icon and command line let’s cuStomize it. Press the <kbd>Ctrl</kbd> + <kbd>,</kbd> keys or select the Settings menu as in the picture below:
+ 
+ ![setting Terminal](https://raw.githubusercontent.com/malekifar/wsl/main/screenshots/terminal-setting.jpg)
+
+###### Adding more colorSchemes
+Windows Terminal lets you define your own color schemes, either by using the built-in preset schemes, or by creating your own scheme from scratch.
+
+### Changing Default Console, colorschemes, fontface, icon and command line
+###### Method1 Using Setting
 ![setting_complete](https://raw.githubusercontent.com/malekifar/wsl/main/screenshots/setting_complete.png)
-###### Changing Default Console
+###### Method1 Using JSON File
+
 ## [Anaconda](https://www.anaconda.com/)
 ### Installing
-Type the following command to download Windows Terminal in temp folder and install it then press Enter:
+Type the following command to download Anaconda in tmp folder and install it then press Enter:
 - For x86:
 ```zsh
 cd /tmp && curl https://repo.anaconda.com/archive/Anaconda3-2021.05-Linux-x86_64.sh --output anaconda.sh && bash anaconda.sh
@@ -370,13 +388,13 @@ echo $SHELL && $SHELL --version
 
 you should get the following results:
 
-![shell version]()
+![shell version](https://raw.githubusercontent.com/malekifar/wsl/main/screenshots/shell%20version.jpg)
 
 ### Installing [oh-my-zsh](https://github.com/ohmyzsh/ohmyzsh)
 Now we can install oh-my-zsh
 
 ```zsh
-sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)
+sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 ```
 
 Notice that oh-my-zsh updated your `~/.bashrc` file and made a backup of the old one. Also notice that the prompt changed now, it is just your username.
@@ -420,6 +438,11 @@ sed -i 's/plugins=\(.*\)/plugins=\(git docker zsh-completions colored-man-pages 
 ### ZSH Themes
 We are going to make our color pretty and prompt useful. There are a lot of themes in oh-my-zsh, you can see them [here](https://github.com/ohmyzsh/ohmyzsh/wiki/Themes):
 ###### [PowerLevel10K](https://github.com/romkatv/powerlevel10k)(recommended)
+- Installing
+```zsh
+git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
+```
+- Enabling
 ```zsh
 sed -i 's/ZSH_THEME=".*"/ZSH_THEME="powerlevel10k\/powerlevel10k"/g' ~/.zshrc
 ```
