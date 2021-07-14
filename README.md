@@ -273,6 +273,7 @@ Versions 1903 (build 18362) of Windows 10
 cd C:\windows\Temp; Invoke-WebRequest -Uri https://github.com/microsoft/terminal/releases/download/v1.8.1444.0/Microsoft.WindowsTerminal_1.8.1444.0_8wekyb3d8bbwe.msixbundle -OutFile Terminal.msixbundle -UseBasicParsing; Add-AppxPackage .\Terminal.msixbundle
 ```
 
+type `A` to changing the execution policy and installing fonts.
 ###### Method3 Using Windows Package Manager
 To use Windows Package Manager, you should [install it](#installing-windows-package-manager) first.
 Then open Powershell or Command Prompt and Type the following command to install Windows Terminal
