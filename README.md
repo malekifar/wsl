@@ -296,7 +296,7 @@ Windows Terminal lets you define your own color schemes, either by using the bui
 
 ### Changing Default Console, colorschemes, fontface, icon and command line
 ###### Method1 Using Setting
-![setting_complete](https://raw.githubusercontent.com/malekifar/wsl/main/screenshots/setting_complete.png)
+![setting_complete](https://raw.githubusercontent.com/malekifar/wsl/main/screenshots/setting%20complete.png)
 ###### Method1 Using JSON File
 
 ## [Anaconda](https://www.anaconda.com/)
