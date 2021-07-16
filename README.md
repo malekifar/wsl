@@ -46,7 +46,7 @@
 - [ZSH](#ZSH)
   - [Installing](#installing-3)
   - [Installing oh-my-zsh](#installing-oh-my-zsh)
-  - [Conda init](#onda-init-1)
+  - [Conda init](#conda-init-1)
   - [ZSH Plugins](#zsh-plugins)
     - [fuzzy finder fzf](#fuzzy-finder-fzf)
     - [autojump](#autojump)
