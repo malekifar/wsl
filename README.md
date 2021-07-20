@@ -409,11 +409,11 @@ Oh-My-ZSH has many plugins. You can find a list of pre-installed plugins at [her
 
 ###### [fuzzy finder fzf](https://github.com/junegunn/fzf)
 ```zsh
-git clone --depth 1 https://github.com/junegunn/fzf.git ~/.zsh/.fzf && ~/.zsh/.fzf/install
+git clone --depth 1 https://github.com/junegunn/fzf.git ${ZSH_CUSTOM:=~/.oh-my-zsh/custom}/plugins/.fzf && ${ZSH_CUSTOM:=~/.oh-my-zsh/custom}/plugins/.fzf/install
 ```
 ###### [autojump](https://github.com/wting/autojump)
 ```zsh
-git clone git://github.com/wting/autojump.git ~/.zsh/autojump && cd ~/.zsh/autojump && ./install.py && echo "source ~/.autojump/etc/profile.d/autojump.sh" >> ~/.zshrc
+git clone git://github.com/wting/autojump.git ${ZSH_CUSTOM:=~/.oh-my-zsh/custom}/plugins/autojump && python ${ZSH_CUSTOM:=~/.oh-my-zsh/custom}/plugins/autojump && echo "source ~/.autojump/etc/profile.d/autojump.sh" >> ~/.zshrc
 ```
 ###### [zsh-autosuggestions](https://github.com/zsh-users/zsh-autosuggestions)
 ```zsh
