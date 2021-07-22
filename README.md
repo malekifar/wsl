@@ -302,6 +302,16 @@ Windows Terminal lets you define your own color schemes, either by using the bui
 ## [Anaconda](https://www.anaconda.com/)
 ### Installing
 Type the following command to download Anaconda in tmp folder and install it then press Enter:
+### Silent Mode(recommended)
+- For x86:
+```zsh
+sudo apt install curl && cd /tmp && curl https://repo.anaconda.com/archive/Anaconda3-2021.05-Linux-x86_64.sh --output anaconda.sh && bash anaconda.sh  -b -p $HOME/anaconda
+```
+- For ARM64:
+```zsh
+sudo apt install curl && cd /tmp && curl https://repo.anaconda.com/archive/Anaconda3-2021.05-Linux-aarch64.sh --output anaconda.sh && bash anaconda.sh  -b -p $HOME/anaconda
+```
+### Normally
 - For x86:
 ```zsh
 sudo apt install curl && cd /tmp && curl https://repo.anaconda.com/archive/Anaconda3-2021.05-Linux-x86_64.sh --output anaconda.sh && bash anaconda.sh
@@ -310,53 +320,51 @@ sudo apt install curl && cd /tmp && curl https://repo.anaconda.com/archive/Anaco
 ```zsh
 sudo apt install curl && cd /tmp && curl https://repo.anaconda.com/archive/Anaconda3-2021.05-Linux-aarch64.sh --output anaconda.sh && bash anaconda.sh
 ```
-You’ll receive these following outputs:
-```
-Output:
+You’ll receive these following outputs in normally mode:
 
-Welcome to Anaconda3 2021.05
+> Output:
+> 
+> Welcome to Anaconda3 2021.05
+>
+> In order to continue the installation process, please review the license agreement\
+> Please, press ENTER to continue
 
-In order to continue the installation process, please review the license
-agreement.
-Please, press ENTER to continue
->>>  
-```
 Press <kbd>Enter</kbd> to continue and then press <kbd>Enter</kbd> to read through the license. Once you’re done reading the license, you’ll be prompted to approve the license terms:
-```
-Output:
 
-Do you approve the license terms? [yes|no]
-```
+> Output:
+> 
+> Do you approve the license terms? [yes|no]
+
 As long as you agree, type `yes`.
-```
-Output:
 
-Anaconda3 will now be installed into this location:
-/home/usename/anaconda3
+> Output:
+> 
+> Anaconda3 will now be installed into this location:
+> /home/usename/anaconda3
+> 
+>   - Press ENTER to confirm the location
+>   - Press CTRL-C to abort the installation
+>   - Or specify a different location below
+> 
+> [/home/username/anaconda3] >>> 
 
-  - Press ENTER to confirm the location
-  - Press CTRL-C to abort the installation
-  - Or specify a different location below
-
-[/home/username/anaconda3] >>> 
-```
 At this point, you’ll be prompted to choose the location of the installation. You can press <kbd>Enter</kbd> to accept the default location, or specify a different location to modify it.
-```
-output:
 
-Preparing transaction: done
-Executing transaction: done
-installation finished.
-Do you wish the installer to initialize Anaconda3
-by running conda init? [yes|no]
-[no] >>> 
-```
+> output:
+> 
+> Preparing transaction: done
+> Executing transaction: done
+> installation finished.
+> Do you wish the installer to initialize Anaconda3
+> by running conda init? [yes|no]
+> [no] >>> 
+
 Type `yes` so that you can initialize Anaconda3. You’ll receive some output that states changes made in various directories. One of the lines you receive will thank you for installing Anaconda.
-```
-Output:
 
-Thank you for installing Anaconda3!
-```
+> Output:
+> 
+> Thank you for installing Anaconda3!
+
 ### Conda init
 ```zsh
 source ~/anaconda3/etc/profile.d/conda.sh && conda init bash && conda init zsh
@@ -387,8 +395,10 @@ echo $SHELL && $SHELL --version
 ```
 
 you should get the following results:
-
-![shell version](https://raw.githubusercontent.com/malekifar/wsl/main/screenshots/shell%20version.jpg)
+> output:
+> 
+> /usr/bin/zsh\
+> zsh 5.8 (x86_64-ubuntu-linux-gnu)
 
 ### Installing [oh-my-zsh](https://github.com/ohmyzsh/ohmyzsh)
 Now we can install oh-my-zsh
@@ -431,9 +441,9 @@ git clone https://github.com/zsh-users/zsh-completions ${ZSH_CUSTOM:=~/.oh-my-zs
 ```zsh
 git clone https://github.com/zdharma/fast-syntax-highlighting ${ZSH_CUSTOM:=~/.oh-my-zsh/custom}/plugins/fast-syntax-highlighting && echo "source ~/.oh-my-zsh/custom/plugins/fast-syntax-highlighting/fast-syntax-highlighting.plugin.zsh" >> ~/.zshrc
 ```
-###### [git](https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/git), [docker](https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/docker), [colored-man-pages](https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/colored-man-pages), [colorize](https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/colorize), [dash](https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/dash) & [command-not-found](https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/command-not-found)
+###### [git](https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/git), [docker](https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/docker), [colored-man-pages](https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/colored-man-pages), [colorize](https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/colorize), [dash](https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/dash) & [command-not-found](https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/command-not-found), [extract](https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/extract)
 ```zsh
-sed -i 's/plugins=\(.*\)/plugins=\(git docker zsh-completions colored-man-pages fast-syntax-highlighting colorize dash command-not-found\)/g' ~/.zshrc
+sed -i 's/plugins=\(.*\)/plugins=\(git docker zsh-completions colored-man-pages fast-syntax-highlighting colorize dash command-not-found extract\)/g' ~/.zshrc
 ```
 ### ZSH Themes
 We are going to make our color pretty and prompt useful. There are a lot of themes in oh-my-zsh, you can see them [here](https://github.com/ohmyzsh/ohmyzsh/wiki/Themes):
@@ -446,7 +456,7 @@ git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$
 ```zsh
 sed -i 's/ZSH_THEME=".*"/ZSH_THEME="powerlevel10k\/powerlevel10k"/g' ~/.zshrc
 ```
-![powerlevel10k](https://raw.githubusercontent.com/malekifar/wsl/main/screenshots/powerlevel10k.jpg)
+![powerlevel10k](https://raw.githubusercontent.com/malekifar/wsl/main/screenshots/powerlevel10k.jpg)(recommended)
 - Configuring:
 To run Powerlevel10k configuration wizard again, type the following commands:
 ```zsh
