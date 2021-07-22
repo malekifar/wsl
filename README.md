@@ -311,7 +311,7 @@ sudo apt install curl && cd /tmp && curl https://repo.anaconda.com/archive/Anaco
 ```zsh
 sudo apt install curl && cd /tmp && curl https://repo.anaconda.com/archive/Anaconda3-2021.05-Linux-aarch64.sh --output anaconda.sh && bash anaconda.sh  -b -p $HOME/anaconda
 ```
-### Normally
+### Normally Mode
 - For x86:
 ```zsh
 sudo apt install curl && cd /tmp && curl https://repo.anaconda.com/archive/Anaconda3-2021.05-Linux-x86_64.sh --output anaconda.sh && bash anaconda.sh
@@ -339,7 +339,7 @@ As long as you agree, type `yes`.
 
 > Output:
 > 
-> Anaconda3 will now be installed into this location:
+> Anaconda3 will now be installed into this location:\
 > /home/usename/anaconda3
 > 
 >   - Press ENTER to confirm the location
@@ -352,11 +352,11 @@ At this point, you’ll be prompted to choose the location of the installation. 
 
 > output:
 > 
-> Preparing transaction: done
-> Executing transaction: done
-> installation finished.
-> Do you wish the installer to initialize Anaconda3
-> by running conda init? [yes|no]
+> Preparing transaction: done\
+> Executing transaction: done\
+> installation finished.\
+> Do you wish the installer to initialize Anaconda3\
+> by running conda init? [yes|no]\
 > [no] >>> 
 
 Type `yes` so that you can initialize Anaconda3. You’ll receive some output that states changes made in various directories. One of the lines you receive will thank you for installing Anaconda.
