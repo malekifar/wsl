@@ -10,6 +10,7 @@
   - [Installing Ubuntu 20.04](#installing-ubuntu-2004)
     - [Method1 Using Microsoft Store](#method1-using-microsoft-store)
     - [Method2 Using PowerShell](#Method2-using-powershell-1)
+    Bardia
     - [Method3 Using Windows Package Manager](#method3-using-windows-package-manager)
       - [Installing Windows Package Manager](#installing-windows-package-manager)
 - [WSL2](#WSL2)
