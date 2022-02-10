@@ -512,3 +512,7 @@ and just type
 ```zsh
 git-pull-all
 ```
+#Tools
+```zsh
+sudo apt-get install fd-find && echo 'alias fd=fdfind' >> ~/.zshrc && zsh
+```
