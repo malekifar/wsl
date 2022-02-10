@@ -504,3 +504,11 @@ This tool allows you to run applications in windows elevated user mode from a no
 mkdir ~/.wudo && cd ~/.wudo && git clone https://github.com/Chronial/wsl-sudo.git && alias wudo="python3 ~/.wudo/wsl-sudo/wsl-sudo.py"
 ```
 ## [Multi-Repo Update Command](https://medium.com/@codenameyau/updating-multiple-repos-with-one-command-9768c8cdfe46)
+create a sh alias for this command
+```zsh
+echo "alias git-pull-all="find . -maxdepth 3 -name .git -type d | rev | cut -c 6- | rev | xargs -I {} git -C {} pull"" >> ~/.zshrc
+```
+and just type
+```zsh
+git-pull-all
+```
