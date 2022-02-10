@@ -503,3 +503,4 @@ This tool allows you to run applications in windows elevated user mode from a no
 ```zsh
 mkdir ~/.wudo && cd ~/.wudo && git clone https://github.com/Chronial/wsl-sudo.git && alias wudo="python3 ~/.wudo/wsl-sudo/wsl-sudo.py"
 ```
+## [Multi-Repo Update Command](https://medium.com/@codenameyau/updating-multiple-repos-with-one-command-9768c8cdfe46)
