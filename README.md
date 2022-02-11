@@ -514,5 +514,5 @@ git-pull-all
 ```
 #Tools
 ```zsh
-sudo apt-get install fd-find && echo 'alias fd=fdfind' >> ~/.zshrc && zsh
+sudo apt-get install fd-find grep unzip zip gzip bzip2 && echo 'alias fd=fdfind' >> ~/.zshrc && zsh
 ```
