@@ -237,6 +237,7 @@ VSCode has many extensions. You can find a list of pre-installed extensions at [
 - [AREPL for python by Almenon](https://marketplace.visualstudio.com/items?itemName=almenon.arepl)
 - [Python Test Explorer for Visual Studio Code by Little Fox Team](https://marketplace.visualstudio.com/items?itemName=LittleFoxTeam.vscode-python-test-adapter)
 - [Python Docstring Generator by Nils Werner](https://marketplace.visualstudio.com/items?itemName=njpwerner.autodocstring)
+- [TODO Highlight](https://marketplace.visualstudio.com/items?itemName=wayou.vscode-todo-highlight)
 - [python snippets by Ferhat Yalçın](https://marketplace.visualstudio.com/items?itemName=frhtylcn.pythonsnippets)
 - [Visual Studio IntelliCode by Microsoft](https://marketplace.visualstudio.com/items?itemName=VisualStudioExptTeam.vscodeintellicode)
 - [Jupyter by Microsoft](https://marketplace.visualstudio.com/items?itemName=ms-toolsai.jupyter)
